@@ -28,18 +28,17 @@ section.wrapper {
 	
 	transition: background-image 700ms ease-in-out;
 	display: flex;
-	align-items: center;
+	align-items: end;
 	justify-content: end;
 	
 }
 
-aside.panel {
-	background-color: rgba(225, 225, 255, 0.8);
-    backdrop-filter: blur(3px);
-	width: 48vw;
-	height: 95%;
+aside.panel-heroHome {
+	background-color: transparent;
+	width: 50vw;
+	height: 25vh;
 	
-	border: 2px solid #FFF;
+	/* border: 2px solid #FFF; */
 	
 	transition: background 700ms ease-in-out;
 
@@ -49,7 +48,8 @@ aside.panel {
 	z-index: 1;
 
 	position: relative;
-	left: 0vw;
+	bottom: 3vh;
+    right: 3vh;
 
 	
 	div.infoHeroHome-content { 
@@ -57,67 +57,31 @@ aside.panel {
 		height: 100%;
 
 		display: flex;
-		flex-direction: column;
-		align-items: start;
-		justify-content: start;
+        flex-direction: column;
+		align-items: center;
+		justify-content: center;
 
-		gap: 1vh;
+		gap: 0vh;
 
 		position: relative;
+           
+        p { 
+            width: 100%;
+            margin: 2vh 0;
 
-
-		div.title-content { 
-			/* background-color: blue; */
-			width: 70%;
-			height: 15vh;
-			margin-top: 0vh;
-			margin-left: 2vw;
-
-			h1 { 
-				color: #000;
-				font-family: "Poppins", sans-serif;
-				font-size: 2rem;
-				font-style: normal;
-				font-weight: 800;
-				line-height: 124%;
-				text-transform: uppercase;
-			}
-		}
-
-
-		div.parrafo-content {
-			/* background-color: yellow;  */
-			width: 80%;
-			height: 25vh;
-			margin-top: 10vh;
-			margin-left: 2vw;
-
-			p { 
-				color: #000;
-				font-family: "Poppins", sans-serif;
-				font-size: 1.2rem;
-				font-style: normal;
-				font-weight: 500;
-				line-height: 124%; /* 24.8px */
-			}
-
-			p:first-child { 
-				display: none;
-			}
-
-			p:last-child { 
-				display: none;
-			}
-		}
+            color: #fff;
+            font-family: "Poppins", sans-serif;
+            font-size: 1.25rem;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 124%; /* 24.8px */
+        }
 	}
 }
 
 @keyframes fadeIn {
 	0% {
 		opacity: 0;
-	}
-	50% { 
-		opacity: 0.5;
 	}
 	100% {
 		opacity: 1;
@@ -128,7 +92,7 @@ div.overlay-wrapper {
 	position: absolute;
 	top: 0;
 	left: 0;
-	background-color: rgba(0, 0, 0, 0.3);
+	background-color: rgba(0, 0, 0, 0.33);
 	width: 100%;
 	height: 100%;
 }
