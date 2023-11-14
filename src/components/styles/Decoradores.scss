@@ -1,0 +1,123 @@
+aside.textDecoration-space {
+    /* background-color: green; */
+    width: 3vw;
+    height: 35vh;
+
+    position: fixed;
+    bottom: 10vh;
+    left: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: start;
+
+    z-index: 10;
+
+    div.line-decoration { 
+        background-color: #DA291C;
+        width: 1vw;
+        height: 35vh;
+    }
+
+    div.text-decoration { 
+        background-color: #101820;
+        width: 2vw;
+        height: 35vh;
+
+        display: flex;
+        align-items: start;
+        justify-content: center;
+        
+
+        h6 {
+            width: 100%;
+            transform: rotate(90deg); 
+            text-transform: uppercase;
+            color: #FFF;
+            font-size: 1rem;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+
+            /* transform-origin: center center; */
+            white-space: nowrap;
+            
+            position: relative;
+            bottom: 1vh;
+        }
+    }
+}
+
+
+.social-media { 
+    /* background-color: blue; */
+    width: 5vw;
+    height: 5vw;
+    position: fixed;
+    bottom: 10vh;
+    right: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    
+    .circle-icon {
+        background-color: #DA291C;
+        width: 5vw;
+        height: 5vw;
+        border-radius: 8px 0px 0px 8px;
+
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+        img {
+            width: 3vw;
+            height: 3vw;
+        }
+    }
+      
+      
+    .bubbleChat {
+      position: absolute;
+      bottom: 15%;
+      right: 100%;  
+      width: 12rem;
+      height: 4rem;
+      /* border: 1px solid red; */
+      display: flex;
+        
+      .squareBubble {
+        background-color: #fff;
+        width: 12rem;
+        height: 4rem;
+        border: 1px solid #000;
+        border-radius: 8px;
+        line-height: 1px;
+        text-align: left;
+  
+        h4 {
+          margin-left: 12px;
+          font-size: 1rem;
+        }
+          
+        p {
+          margin-left: 12px;
+          font-size: .8rem;
+        }
+      }
+          
+      .trianguleBubble {
+      
+      position: relative;
+      top: 55%;
+      width: 0;
+      height: 0;
+      border-top: 10px solid transparent; /* Lado izquierdo transparente */
+      border-bottom: 10px solid transparent; /* Lado derecho transparente */
+      border-left: 20px solid #000; /* Lado inferior sólido (el color define el color del triángulo) */
+      }  
+    }   
+  }
