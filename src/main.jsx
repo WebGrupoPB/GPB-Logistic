@@ -1,5 +1,6 @@
 import React from 'react'
 import Home from './routes/Home.jsx'
+import MyGallery from './components/Gallery.jsx';
 
 
 
@@ -18,6 +19,10 @@ import {
      element: <Home />,
      errorElement: <h1>Error Page :c</h1>,
    },
+   {
+    path: "/galeria",
+    element: <MyGallery />,
+  },
 
 
  ]); 

@@ -1,17 +1,87 @@
+// Define la animación slideIn desde la derecha
+@keyframes slideInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(100%);
+        right: -5vw; // Agrega esta línea
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+        right: 0vw; // Ajusta este valor según sea necesario
+    }
+}
+
+// Define la animación slideIn desde la izquierda
+@keyframes slideInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes zoomIn {
+    0% {
+      transform: scale(0);
+      opacity: 0;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+
 
 section.hero-space {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 92.5vh;
+    height: 100vh;
+    overflow: hidden;
     
     margin-top: 0vh;
     margin-bottom: 0vh;
 
+    position: relative;
+
     div.hero-slider{
         width: 100%;
-        height: 92.5vh;
+        height: 100vh;
+
+        position: relative;
+
+        aside.hero-title {
+            position: absolute;
+            top: 3vh;
+            right: 0;
+
+            animation: slideInRight 2s ease-in-out;
+
+            z-index: 1;
+
+            h1 { 
+                /* width: 50vw; */
+                color: #FFF;
+                font-size: 2.8rem;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal; 
+                
+                margin: .5vh 0;
+                margin-left: 5vw;
+            }
+
+            div { 
+                background-color: #FFF;
+                width: 52vw;
+                height: .5vh;
+            }
+        }
       }
   }
 
@@ -40,12 +110,16 @@ section.propuesta-section {
             letter-spacing: -3.75px;
 
             margin-left: 4vw;
+            margin-top: 6vh;
+
+            animation: slideInLeft 2s ease-in-out;
         }
     }
 
     aside.propuesta-space {
         background-image: url("https://s3.amazonaws.com/gpblogistic.com/Recursos-GPB-Logistic/Home/propuesta/propuesta-fondo.png");
         background-size: 100% 100%;
+        box-shadow: 0px 9px 26.8px 9px rgba(0, 0, 0, 0.50);
 
         width: 100%;
         height: 85vh;
@@ -71,9 +145,48 @@ section.propuesta-section {
             place-items: center;
 
             div.valores-space { 
-                background-color: blue;
+                /* background-color: blue; */
                 width: 60vw;
                 height: 60vh;
+
+                display: grid;
+                grid-template-columns: repeat(2, 1fr); // Dos columnas
+                grid-template-rows: repeat(2, 1fr);    // Dos filas
+                gap: 20px;                             // Espacio entre los elementos
+
+                div.valor-item {
+                    /* border: 1px solid #000;
+                    background-color: red; */
+                    width: calc(60vw/2);
+                    height: calc(60vh/2);
+
+                    img { 
+                        width: 6vw;
+                        height: auto;
+                        margin: .5vh 0;
+                    }
+
+                    h3 { 
+                        width: 50%;
+                        margin: .5vh 0;
+
+                        color: #FFF;
+                        font-size: 1.5rem;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: 85.3%; /* 25.59px */
+                        
+                    }
+
+                    p { 
+                        color: #FFF;
+                        font-family: Helvetica;
+                        font-size: 1rem;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 85.3%; /* 12.795px */
+                    }
+                }
             }
         }
 
@@ -85,6 +198,305 @@ section.propuesta-section {
             top: 2.5vh;
             left: 5vw;
         }
+    }
+}
 
+section.gallery-section { 
+    /* background-color: green; */
+    width: 100%;
+    min-height: 105vh;
+
+    margin-top: 2.5vh;
+    margin-bottom: 5vh;
+    
+
+    article.title {
+        /* background-color: red;  */
+        width: 100%;
+        height: 20vh;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        h1 { 
+            width: 50vw;
+            text-align: center;
+            color: #101820;
+            font-size: 2.5rem;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 85.3%; /* 42.65px */
+            letter-spacing: -3.75px;
+            margin: 1vh 0;
+
+            animation: zoomIn 2s ease-in-out;
+
+            span { 
+               color: #DA291C;
+            }
+        }
+    }
+
+    aside.gallery-space {
+        background-color: blue;
+
+        width: 100%;
+        min-height: 100vh;
+
+        display: grid;
+        place-items: center;
+
+        /* overflow: hidden; */
+        
+        div { 
+            width: 100%;
+            /* min-height: 100vh; */
+
+            display: grid;
+            place-items: center;
+        }
+    }
+}
+
+section.valores-section { 
+    /* background-color: green; */
+    width: 100%;
+    min-height: 90vh;
+
+    margin-top: 2.5vh;
+    margin-bottom: 10vh;
+
+    overflow: hidden;
+    
+
+    article.title {
+        /* background-color: red; */ 
+        width: 100%;
+        height: 15vh;
+
+        display: flex;
+        align-items: center;
+        justify-content: end;
+
+        h1 { 
+            color: #000;
+            font-size: 3.25rem;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 85.3%; /* 42.65px */
+            letter-spacing: -3.75px;
+
+            margin-right: 4vw;
+            margin-bottom: 8vh;
+
+            animation: slideInRight 2s ease-in-out;
+        }
+    }
+
+    div.valores-space {
+        /* background-color: red; */
+
+        width: 100%;
+        height: 90vh;
+
+        display: grid;
+        place-items: center;
+
+        aside.valores-fondo {
+            background-image: url("https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExMG10eW9icm4zM3kwYWkxbjQ2ZzIyNThnanI4MXMxcm1xZnByeG14NSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/5ABTap4jhyKBG0lFwT/giphy.gif");
+            background-size: 100% 100%;
+            width: 90vw;
+            height: 90vh;
+
+            display: grid;
+            place-items: center;
+
+            div.overlay-valores {
+                background: linear-gradient(106deg, rgba(255, 255, 255, 0.36) 1.08%, rgba(255, 255, 255, 0.30) 109.68%);
+                backdrop-filter: blur(8px);
+
+                width: 80vw;
+                height: 80vh;
+                position: relative;
+
+                display: grid;
+                place-items: center;
+
+                div.valores-info-space {
+                    width: 70vw;
+                    height: 70vh;
+
+                    display: grid;
+                    place-items: center;
+                    grid-template-columns: repeat(3, 1fr); // Dos columnas
+                    grid-template-rows: repeat(1, 1fr);    // Dos filas
+                    gap: 0px;                             // Espacio entre los elementos
+
+
+                    article.valores-info {
+                        /* background-color: blue; */
+                        width: calc(68vw/2);
+                        height: calc(68vw/2);
+
+                        display: grid;
+                        place-items: center;
+                        grid-template-columns: repeat(1, 1fr);
+                        grid-template-rows: repeat(3, 1fr);
+                        align-items: start; // Alinear las filas a la izquierda
+
+                        h3 {
+                            color: #FFF;
+                            font-size: 2rem;
+                            font-style: normal;
+                            font-weight: 700;
+                            line-height: 85.3%;
+                            letter-spacing: -3px;
+                        }
+
+                        img { 
+                            width: 15vw;
+                            height: auto;
+                            margin: 3vh 0;
+                        }
+
+                        p {
+                            width: 80%;
+                            color: #FFF;
+                            font-size: 1.5rem;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: 100%;
+                            letter-spacing: -1.875px;
+                        }
+                    }
+    
+                    div.line-divide { 
+                        /* position: absolute; */
+    
+                        background-color: #fff;
+                        width: .5vw;
+                        height: 100%;
+                    }
+                }       
+            }
+        }
+    }
+}
+
+
+section.propuesta-section { 
+    /* background-color: green; */
+    width: 100%;
+    height: 92vh;
+
+    margin-top: 2.5vh;
+
+    article.title {
+        /* background-color: red; */ 
+        width: 100%;
+        height: 7.5vh;
+
+        display: flex;
+        align-items: center;
+        justify-content: start;
+
+        h1 { 
+            color: #000;
+            font-size: 3.25rem;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 85.3%; /* 42.65px */
+            letter-spacing: -3.75px;
+
+            margin-left: 4vw;
+            margin-top: 6vh;
+
+            animation: slideInLeft 2s ease-in-out;
+        }
+    }
+
+    aside.propuesta-space {
+        background-image: url("https://s3.amazonaws.com/gpblogistic.com/Recursos-GPB-Logistic/Home/propuesta/propuesta-fondo.png");
+        background-size: 100% 100%;
+        box-shadow: 0px 9px 26.8px 9px rgba(0, 0, 0, 0.50);
+
+        width: 100%;
+        height: 85vh;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        overflow: hidden;
+
+        div.valoresOverlay-space {
+            background: linear-gradient(150deg, rgba(16, 24, 32, 0.80) 0%, rgba(16, 24, 32, 0.49) 101.92%, rgba(16, 24, 32, 0.20) 101.92%);
+            backdrop-filter: blur(5px);
+            border: 1px solid #101820;
+
+            width: 70vw;
+            height: 75vh;
+
+            position: relative;
+            left: 4vw;
+
+            display: grid;
+            place-items: center;
+
+            div.valores-space { 
+                /* background-color: blue; */
+                width: 60vw;
+                height: 60vh;
+
+                display: grid;
+                grid-template-columns: repeat(2, 1fr); // Dos columnas
+                grid-template-rows: repeat(2, 1fr);    // Dos filas
+                gap: 20px;                             // Espacio entre los elementos
+
+                div.valor-item {
+                    /* border: 1px solid #000;
+                    background-color: red; */
+                    width: calc(60vw/2);
+                    height: calc(60vh/2);
+
+                    img { 
+                        width: 6vw;
+                        height: auto;
+                        margin: .5vh 0;
+                    }
+
+                    h3 { 
+                        width: 50%;
+                        margin: .5vh 0;
+
+                        color: #FFF;
+                        font-size: 1.5rem;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: 85.3%; /* 25.59px */
+                        
+                    }
+
+                    p { 
+                        color: #FFF;
+                        font-family: Helvetica;
+                        font-size: 1rem;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 85.3%; /* 12.795px */
+                    }
+                }
+            }
+        }
+
+        img.persona-img {
+            width: auto;
+            height: 80vh;
+
+            position: relative;
+            top: 2.5vh;
+            left: 5vw;
+        }
     }
 }

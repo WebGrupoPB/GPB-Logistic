@@ -64,7 +64,7 @@ const Navbar = () => {
         <nav className='navbar-desktop'>
             <aside className='navlogo-space'>
                 <Link to={"/#"} onClick={scrollToTop}>
-                    <img src="https://s3.amazonaws.com/gpblogistic.com/Recursos-GPB-Logistic/General/gpbL-logo-navbar.svg" alt="navlogo" />
+                    <img src="https://s3.amazonaws.com/gpblogistic.com/Recursos-GPB-Logistic/General/Navbar/gpbL-logo-navbar.svg" alt="navlogo" />
                 </Link>
             </aside>
 
@@ -94,11 +94,11 @@ const Navbar = () => {
 
                 <div className='navSupport'>
                     <Link>
-                        <img src="https://s3.amazonaws.com/gpblogistic.com/Recursos-GPB-Logistic/General/audifonos-navbar.svg" alt="audifonosIcon" />
+                        <img src="https://s3.amazonaws.com/gpblogistic.com/Recursos-GPB-Logistic/General/Navbar/audifonos-navbar.svg" alt="audifonosIcon" />
                     </Link>
 
                     <Link>
-                        <img src="https://s3.amazonaws.com/gpblogistic.com/Recursos-GPB-Logistic/General/global-navbar.svg" alt="globalIcon" />
+                        <img src="https://s3.amazonaws.com/gpblogistic.com/Recursos-GPB-Logistic/General/Navbar/global-navbar.svg" alt="globalIcon" />
                     </Link>
                 </div>
             </aside>
@@ -106,7 +106,7 @@ const Navbar = () => {
             <aside className='navservices-space'>
                 <Link to={"/#"}>
                     <h3>Cotiza <span>HOY</span></h3>
-                    <img src="https://s3.amazonaws.com/gpblogistic.com/Recursos-GPB-Logistic/General/cotizaBtn-navbar.svg" alt="cotizaBtn" />
+                    <img src="https://s3.amazonaws.com/gpblogistic.com/Recursos-GPB-Logistic/General/Navbar/cotizaBtn-navbar.svg" alt="cotizaBtn" />
                 </Link>
             </aside>
         </nav>

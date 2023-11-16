@@ -10,10 +10,17 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@react-google-maps/api": "^2.19.2",
+    "owl.carousel": "^2.3.4",
     "react": "^18.2.0",
+    "react-awesome-slider": "^4.1.0",
     "react-dom": "^18.2.0",
+    "react-image-gallery": "^1.3.0",
     "react-router-dom": "^6.18.0",
-    "sass": "^1.69.5"
+    "react-scroll": "^1.9.0",
+    "react-slick": "^0.29.0",
+    "sass": "^1.69.5",
+    "slick-carousel": "^1.8.1"
   },
   "devDependencies": {
     "@types/react": "^18.2.15",

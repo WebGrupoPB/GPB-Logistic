@@ -79,6 +79,22 @@ aside.panel-heroHome {
 	}
 }
 
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+	50% {
+        opacity: .5;
+        transform: translateX(-50%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
 @keyframes fadeIn {
 	0% {
 		opacity: 0;
@@ -87,6 +103,9 @@ aside.panel-heroHome {
 		opacity: 1;
 	}
 }
+
+
+
 
 div.overlay-wrapper {
 	position: absolute;

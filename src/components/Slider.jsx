@@ -49,7 +49,8 @@ const Slider = ({ dataSlider, panelInfo }) => {
   // cambia el background del slider por el id
   const changeActive = (id) => {
     setActiveID(id);
-    setWrapperStyle({ backgroundImage: `url('${dataSlider[id].img}')` });
+    setWrapperStyle({ 
+      backgroundImage: `url('${dataSlider[id].img}')` });
   };
 
   // modifica el estilo del panel.aside en funcion del panelInfo
