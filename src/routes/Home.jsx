@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 import Decoradores from '../components/Decoradores';
 import Slider from '../components/Slider';
-import MyGallery from '../components/Gallery';
+import Galleria from '../components/Gallery'
 import TestimonialsCarousel from '../components/Carrusel';
 import Footer from '../components/Footer';
 
@@ -39,12 +39,31 @@ const dataHero = [
     },
   ];
 
+  const slides = [
+    {
+      city: 'París',
+      country: 'Francia',
+      img: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/paris.jpg',
+    },
+    {
+      city: 'Singapur',
+      img: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/singapore.jpg',
+    },
+    {
+      city: 'Praga',
+      country: 'República Checa',
+      img: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/prague.jpg',
+    },
+    // Agrega más elementos según sea necesario
+  ];
+
 
 const Home = () => {
 
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
+
 
     return (
     <>
@@ -122,7 +141,7 @@ const Home = () => {
 
                 <aside className='gallery-space'>
                   <div>
-                    {/* <MyGallery /> */}
+                    <Galleria slides={slides} />
                   </div>                 
                 </aside>
             </section>
@@ -166,12 +185,12 @@ const Home = () => {
                 </div>
             </section>
 
-            <section className='propuesta-section'>
+            <section className='testimonios-section'>
                 <article className='title'>
                     <h1>TESTIMONIOS</h1>
                 </article>
 
-                <aside className='propuesta-space'>
+                <aside className='testimonios-space'>
 
                   <TestimonialsCarousel /> 
 
