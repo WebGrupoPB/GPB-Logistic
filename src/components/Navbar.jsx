@@ -83,12 +83,16 @@ const Navbar = () => {
                         Nosotros
                     </NavLink>
 
-                    <NavLink to={'/ubicaciones'} activeClassName="active" onClick={scrollToTop}>  
-                        Ubicaciones
+                    <NavLink to={'/cobertura'} activeClassName="active" onClick={scrollToTop}>  
+                        Cobertura
                     </NavLink>
 
                     <NavLink to={'/contacto'} activeClassName="active" onClick={scrollToTop}>  
                         Contacto
+                    </NavLink>
+
+                    <NavLink to={'/clientes'} activeClassName="active" onClick={scrollToTop}>  
+                        Clientes
                     </NavLink>
                 </div>
 

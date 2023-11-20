@@ -65,7 +65,7 @@ const Decoradores = () => {
               onMouseEnter={handleHover}
               onMouseLeave={handleMouseLeave}
             >
-              <img src="https://s3.amazonaws.com/gpblogistic.com/Recursos-GPB-Logistic/General/asistenteIcon.svg" alt="asistente icon" />
+              <img src="https://s3.amazonaws.com/gpblogistic.com/Recursos-GPB-Logistic/General/Navbar/asistenteIcon.svg" alt="asistente icon" />
             </div> 
           </Link>
           {isHovered && <ChatBubble />}

@@ -72,7 +72,7 @@ const Home = () => {
         </header>
 
         <main>
-            {/* <Decoradores /> */}
+            <Decoradores />
 
             <section className='hero-space' id="hero-space">
                 <div className='hero-slider'>
@@ -199,9 +199,9 @@ const Home = () => {
 
             
 
-            <div className='space-margin'>
+            {/* <div className='space-margin'>
 
-            </div>
+            </div> */}
             
         </main>
 

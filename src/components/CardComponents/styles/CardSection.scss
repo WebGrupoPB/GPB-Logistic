@@ -1,0 +1,50 @@
+section.Cards-section { 
+    /* background-color: blue; */
+    width: 100%;
+    min-height: 35vh;
+    /* margin-top: 5vh; */
+    margin-bottom: 10vh;
+
+    display: grid;
+    place-items: center;
+
+    position: relative;
+    /* top: 5vh; */
+
+    div.Cards-space { 
+        /* background-color: red; */
+        width: 95%;
+        min-height: 35vh;
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        gap: 4.65vw;
+    }
+}
+
+section.Cards-section-forEmpresas { 
+    /* background-color: blue; */
+    width: 100%;
+    min-height: 35vh;
+    margin-bottom: 10vh;
+
+    display: grid;
+    place-items: center;
+
+    position: relative;
+    /* top: 5vh; */
+
+    div.Cards-space { 
+        /* background-color: red; */
+        width: 95%;
+        min-height: 35vh;
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        gap: 4vw;
+    }
+}
