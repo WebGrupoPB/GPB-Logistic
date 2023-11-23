@@ -67,23 +67,6 @@ const dataHero = [
     },
   ];
 
-  const slides = [
-    {
-      city: 'París',
-      country: 'Francia',
-      img: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/paris.jpg',
-    },
-    {
-      city: 'Singapur',
-      img: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/singapore.jpg',
-    },
-    {
-      city: 'Praga',
-      country: 'República Checa',
-      img: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/prague.jpg',
-    },
-    // Agrega más elementos según sea necesario
-  ];
 
 
 const Home = () => {
@@ -166,12 +149,8 @@ const Home = () => {
                       <span> nosotros nos encargamos de su logística</span>
                     </h1>
                 </article>
-
-                <aside className='gallery-space'>
-                  <div>
-                    {/* <Galleria /> */}
-                  </div>                 
-                </aside>
+            
+                <Galleria />
             </section>
 
 

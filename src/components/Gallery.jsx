@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import React, { useRef, useState, useEffect} from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/free-mode';
@@ -8,21 +8,15 @@ import './styles/Gallery.scss';
 import { FreeMode, Navigation, Thumbs } from 'swiper/modules';
 
 const slidesData = [
-  'https://swiperjs.com/demos/images/nature-1.jpg',
-  'https://swiperjs.com/demos/images/nature-2.jpg',
-  'https://swiperjs.com/demos/images/nature-3.jpg',
-  'https://swiperjs.com/demos/images/nature-4.jpg',
-  'https://swiperjs.com/demos/images/nature-5.jpg',
-  'https://swiperjs.com/demos/images/nature-6.jpg',
-  'https://swiperjs.com/demos/images/nature-7.jpg',
-  'https://swiperjs.com/demos/images/nature-8.jpg',
-  'https://swiperjs.com/demos/images/nature-9.jpg',
-  'https://swiperjs.com/demos/images/nature-10.jpg',
+  'https://s3.amazonaws.com/gpblogistic.com/Recursos-GPB-Logistic/Home/sliderHome/sliderHome-img1.jpeg',
+  'https://s3.amazonaws.com/gpblogistic.com/Recursos-GPB-Logistic/Home/sliderHome/sliderHome-img2.jpeg',
+  'https://s3.amazonaws.com/gpblogistic.com/Recursos-GPB-Logistic/Home/sliderHome/sliderHome-img3.jpeg',
+  'https://s3.amazonaws.com/gpblogistic.com/Recursos-GPB-Logistic/Home/sliderHome/sliderHome-img4.jpeg',
 ];
 
+
 const Galleria = () => {
-  /* const thumbsSwiper = useRef(null); */
-  const [thumbsSwiper, setThumbsSwiper] = useState(null);
+  const thumbsSwiper = useRef(null);
 
 
   return (
@@ -34,33 +28,33 @@ const Galleria = () => {
         }}
         spaceBetween={10}
 
-        /* thumbs={{ swiper: thumbsSwiper.current }} */
-        thumbs={{ swiper: thumbsSwiper }}
-
+        thumbs={{ swiper: thumbsSwiper.current }} //opcion de useRef
+        /* thumbs={{ swiper: thumbsSwiper }} */ //opcion de useState y useEffect
+        loop={true}
         navigation={true}
         modules={[FreeMode, Navigation, Thumbs]}
-        className="mySwiper2"
+        className="mySwiper2-gallery"
       >
         {slidesData.map((image, index) => (
           <SwiperSlide key={index}>
-            <img src={image} alt={`Slide ${index + 1}`} />
+            <img src={image} alt={`Slide ${index + 1}`} className='mySwiper2-img'/>
           </SwiperSlide>
         ))}
       </Swiper>
       <Swiper
-        /* onSwiper={(swiper) => (thumbsSwiper.current = swiper)} */
-        onSwiper={setThumbsSwiper}
-
+        onSwiper={(swiper) => (thumbsSwiper.current = swiper)} //opcion de useRef
+        loop={true}
         spaceBetween={10}
         slidesPerView={4}
         freeMode={true}
+        
         watchSlidesProgress={true}
         modules={[FreeMode, Navigation, Thumbs]}
-        className="mySwiper"
+        className="mySwiper-gallery"
       >
         {slidesData.map((image, index) => (
           <SwiperSlide key={index}>
-            <img src={image} alt={`Thumb ${index + 1}`} />
+            <img src={image} alt={`Thumb ${index + 1}`} className='mySwiper1-img'/>
           </SwiperSlide>
         ))}
       </Swiper>

@@ -65,7 +65,7 @@ const slidesData = [
             disableOnInteraction: false,
           }}
         modules={[Autoplay, Pagination, Navigation]}
-        className="mySwiper"
+        className="mySwiper-testimonials"
         onSlideChange={handleSlideChange}
       >
         {slidesData.map((slide, index) => (
