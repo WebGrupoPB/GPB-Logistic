@@ -4,6 +4,8 @@ import MyGallery from './components/Gallery.jsx';
 import Empresas from './routes/Clientes.jsx';
 import Cobertura from './routes/Cobertura.jsx';
 import ScrollContainer from './components/ScrollContainer.jsx';
+import CarruselSwipper from './components/CarruselSwipper.jsx';
+import Galleria from './components/Gallery.jsx';
 
 
 import './index.css'
@@ -34,6 +36,14 @@ import {
   {
     path: "/scroll",
     element: <ScrollContainer />,
+  },
+  {
+    path: "/swipper",
+    element: <CarruselSwipper />,
+  },
+  {
+    path: "/galeria",
+    element: <Galleria />,
   },
 
 

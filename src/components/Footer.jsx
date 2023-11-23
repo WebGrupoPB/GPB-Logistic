@@ -54,7 +54,7 @@ const Footer = () => {
         </article>
 
         <aside className='footer-map'>
-            <GoogleMaps />
+            {/* <GoogleMaps /> */}
         </aside>
     </footer>
   );

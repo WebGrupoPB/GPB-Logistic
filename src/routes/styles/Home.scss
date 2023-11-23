@@ -35,13 +35,25 @@
     }
   }
 
+@keyframes pop {
+    5% { 
+        transform: scale(1); 
+    }
+    10% { 
+        transform: scale(1.15); 
+    }
+    15% { 
+        transform: scale(1); 
+    }
+  }
+
 
 section.hero-space {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 100vh;
+    height: 120vh;
     overflow: hidden;
     
     margin-top: 0vh;
@@ -51,16 +63,16 @@ section.hero-space {
 
     div.hero-slider{
         width: 100%;
-        height: 100vh;
+        height: 120vh;
 
         position: relative;
 
         aside.hero-title {
             position: absolute;
             top: 3vh;
-            right: 0;
+            left: 0;
 
-            animation: slideInRight 2s ease-in-out;
+            animation: slideInLeft 2s ease-in-out;
 
             z-index: 1;
 
@@ -73,7 +85,7 @@ section.hero-space {
                 line-height: normal; 
                 
                 margin: .5vh 0;
-                margin-left: 5vw;
+                margin-left: 1vw;
             }
 
             div { 
@@ -91,6 +103,8 @@ section.propuesta-section {
     height: 92vh;
 
     margin-top: 2.5vh;
+    overflow: hidden;
+    padding-top: 1vh;
 
     article.title {
         /* background-color: red; */ 
@@ -99,7 +113,7 @@ section.propuesta-section {
 
         display: flex;
         align-items: center;
-        justify-content: start;
+        justify-content: end;
 
         h1 { 
             color: #000;
@@ -109,10 +123,10 @@ section.propuesta-section {
             line-height: 85.3%; /* 42.65px */
             letter-spacing: -3.75px;
 
-            margin-left: 4vw;
+            margin-right: 5vw;
             margin-top: 6vh;
 
-            animation: slideInLeft 2s ease-in-out;
+            animation: slideInRight 2s ease-in-out;
         }
     }
 
@@ -126,7 +140,7 @@ section.propuesta-section {
 
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        justify-content: center; //cambiar a space-between si se agrega la img
 
         overflow: hidden;
 
@@ -164,6 +178,8 @@ section.propuesta-section {
                         width: 6vw;
                         height: auto;
                         margin: .5vh 0;
+                        animation: pop 2.5s ease infinite;
+                        animation-delay: 1.5s;
                     }
 
                     h3 { 
@@ -184,7 +200,8 @@ section.propuesta-section {
                         font-size: 1rem;
                         font-style: normal;
                         font-weight: 400;
-                        line-height: 85.3%; /* 12.795px */
+                        line-height: 16px; /* 12.795px */
+                        text-wrap: pretty;
                     }
                 }
             }
@@ -298,92 +315,94 @@ section.valores-section {
         /* background-color: red; */
 
         width: 100%;
-        height: 90vh;
+        height: 100vh;
 
         display: grid;
         place-items: center;
 
-        aside.valores-fondo {
-            background-image: url("https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExMG10eW9icm4zM3kwYWkxbjQ2ZzIyNThnanI4MXMxcm1xZnByeG14NSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/5ABTap4jhyKBG0lFwT/giphy.gif");
-            background-size: 100% 100%;
-            width: 90vw;
-            height: 90vh;
+        aside.valores-marco {
+            /* background-color: blue; */
+            width: 95%;
+            height: 100vh;
 
-            display: grid;
-            place-items: center;
+            display: flex;
+            align-items: center;
+            justify-content: end;
 
-            div.overlay-valores {
-                background: linear-gradient(106deg, rgba(255, 255, 255, 0.36) 1.08%, rgba(255, 255, 255, 0.30) 109.68%);
-                backdrop-filter: blur(8px);
+            position: relative;
+            right: 0vw;
 
-                width: 80vw;
-                height: 80vh;
-                position: relative;
+            div.valores-info-space {
+                /* background-color: yellow; */
+                /* border: 1px solid #000; */
+                width: 55vw;
+                height: 100vh;
+                z-index: 1;
+                
+                display: flex;
+                align-items: center;
+                justify-content: center;
 
-                display: grid;
-                place-items: center;
+                position: absolute;
+                left: 0vw;
+            }
 
-                div.valores-info-space {
-                    width: 70vw;
-                    height: 70vh;
-
-                    display: grid;
-                    place-items: center;
-                    grid-template-columns: repeat(3, 1fr); // Dos columnas
-                    grid-template-rows: repeat(1, 1fr);    // Dos filas
-                    gap: 0px;                             // Espacio entre los elementos
-
-
-                    article.valores-info {
-                        /* background-color: blue; */
-                        width: calc(68vw/2);
-                        height: calc(68vw/2);
-
-                        display: grid;
-                        place-items: center;
-                        grid-template-columns: repeat(1, 1fr);
-                        grid-template-rows: repeat(3, 1fr);
-                        align-items: start; // Alinear las filas a la izquierda
-
-                        h3 {
-                            color: #FFF;
-                            font-size: 2rem;
-                            font-style: normal;
-                            font-weight: 700;
-                            line-height: 85.3%;
-                            letter-spacing: -3px;
-                        }
-
-                        img { 
-                            width: 15vw;
-                            height: auto;
-                            margin: 3vh 0;
-                        }
-
-                        p {
-                            width: 80%;
-                            color: #FFF;
-                            font-size: 1.5rem;
-                            font-style: normal;
-                            font-weight: 400;
-                            line-height: 100%;
-                            letter-spacing: -1.875px;
-                        }
-                    }
-    
-                    div.line-divide { 
-                        /* position: absolute; */
-    
-                        background-color: #fff;
-                        width: .5vw;
-                        height: 100%;
-                    }
-                }       
+            img { 
+                width: auto;
+                height: 100vh;
+                
             }
         }
     }
 }
 
+
+section.cifras-section { 
+    /* background-color: green; */
+    width: 100%;
+    height: 60vh;
+    margin: 0; /* Ajusta el margen a 0 */
+    margin-bottom: 10vh;
+    padding: 0; /* Ajusta el relleno a 0 */
+
+    /* margin-top: 2.5vh; */
+
+    article.title {
+        /* background-color: red; */ 
+        width: 100%;
+        height: 8vh;
+
+        display: flex;
+        align-items: center;
+        justify-content: start;
+
+        h1 { 
+            color: #000;
+            font-size: 3.25rem;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 85.3%; /* 42.65px */
+            letter-spacing: -3.75px;
+
+            margin-left: 5vw;
+            margin-top: 6vh;
+
+            animation: slideInLeft 2s ease-in-out;
+        }
+    }
+
+    aside.cifras-space {
+        background-color: #101820;
+        width: 100%;
+        height: 50vh;
+
+        display: grid;
+        place-items: center;
+
+        /* overflow: hidden; */
+
+    }       
+}
 
 section.testimonios-section { 
     /* background-color: green; */
@@ -401,7 +420,7 @@ section.testimonios-section {
 
         display: flex;
         align-items: center;
-        justify-content: start;
+        justify-content: center;
 
         h1 { 
             color: #000;
@@ -411,21 +430,20 @@ section.testimonios-section {
             line-height: 85.3%; /* 42.65px */
             letter-spacing: -3.75px;
 
-            margin-left: 4vw;
+            margin-left: 0vw;
             margin-top: 6vh;
 
-            animation: slideInLeft 2s ease-in-out;
+            animation: zoomIn 2s ease-in-out;
         }
     }
 
     aside.testimonios-space {
         /* background-color: #101820; */
         width: 100%;
-        height: 70vh;
+        height: 75vh;
 
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        display: grid;
+        place-items: center;
 
         /* overflow: hidden; */
 

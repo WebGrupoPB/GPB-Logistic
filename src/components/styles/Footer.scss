@@ -70,7 +70,7 @@ footer.footer-space {
         position: relative;
         display: flex;
         align-items: start;
-        justify-content: start;
+        justify-content: end;
         gap: 4vw;
 
         div.footer-info-contactos {
@@ -149,7 +149,7 @@ footer.footer-space {
             width: 100%;
             position: absolute;
             bottom: 0;
-            left: -0.5vw;
+            left: 2vw;
 
             text-align: center;
             color: #FFF;

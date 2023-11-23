@@ -34,9 +34,10 @@ section.wrapper {
 }
 
 aside.panel-heroHome {
-	background-color: transparent;
-	width: 50vw;
-	height: 25vh;
+	background-color: #101820;
+	width: 55vw;
+	height: 35vh;
+	border-radius: 96.05px 0px 0px 0px;
 	
 	/* border: 2px solid #FFF; */
 	
@@ -48,8 +49,8 @@ aside.panel-heroHome {
 	z-index: 1;
 
 	position: relative;
-	bottom: 3vh;
-    right: 3vh;
+	bottom: 0vh;
+    right: 0vh;
 
 	
 	div.infoHeroHome-content { 
@@ -57,25 +58,79 @@ aside.panel-heroHome {
 		height: 100%;
 
 		display: flex;
-        flex-direction: column;
 		align-items: center;
-		justify-content: center;
+		justify-content: end;
 
 		gap: 0vh;
 
 		position: relative;
-           
-        p { 
-            width: 100%;
-            margin: 2vh 0;
 
-            color: #fff;
-            font-family: "Poppins", sans-serif;
-            font-size: 1.25rem;
-            font-style: normal;
-            font-weight: 500;
-            line-height: 124%; /* 24.8px */
-        }
+		article.text1 { 
+			/* background-color: green; */
+			width: 92%;
+			height: 92%;
+
+			&.visible { 
+				display: grid;
+				place-items: center;
+			}
+
+			&.hidden { 
+				display: none;
+			}
+			
+
+			p { 
+				width: 100%;
+				margin: 2vh 0;
+	
+				color: #FFF;
+				font-size: 1.5rem;
+				font-style: normal;
+				font-weight: 400;
+				line-height: normal;
+				text-wrap: pretty;
+
+				span { 
+					color: #DA291C;
+					font-weight: 700;
+				}
+			}
+		}
+		
+		article.text2 { 
+			/* background-color: green; */
+			width: 92%;
+			height: 92%;
+			display: grid;
+			place-items: center;
+
+			&.visible { 
+				display: grid;
+				place-items: center;
+			}
+
+			&.hidden { 
+				display: none;
+			}
+
+			p { 
+				width: 100%;
+				margin: 2vh 0;
+	
+				color: #FFF;
+				font-size: 1.5rem;
+				font-style: normal;
+				font-weight: 400;
+				line-height: normal;
+				text-wrap: pretty;
+
+				span { 
+					color: #DA291C;
+					font-weight: 700;
+				}
+			}
+		}
 	}
 }
 

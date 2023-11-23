@@ -7,6 +7,7 @@ import Slider from '../components/Slider';
 import Footer from '../components/Footer';
 import CardSection from '../components/CardComponents/CardSection';
 import TestimonialsCarousel from '../components/Carrusel';
+import CarruselSwipper from '../components/CarruselSwipper.jsx';
 import ScrollContainer from '../components/ScrollContainer.jsx';
 
 import "./styles/Cobertura.scss"
@@ -144,9 +145,7 @@ const Cobertura = () => {
                                     <p>
                                         En GPB Logistic, nos enorgullece servir a Guatemala, 
                                         siendo su socio logístico de confianza. Aquí, en nuestra tierra natal, 
-                                        establecemos el estándar para la excelencia en transporte de carga. 
-                                        Desde combustible, hasta plataformas para carga sobredimensionada, 
-                                        estamos ahí para nuestros clientes...
+                                        establecemos el estándar para la excelencia en transporte de carga...
                                     </p>
                                 </div>
                             )}
@@ -183,7 +182,7 @@ const Cobertura = () => {
 
                 <aside className='testimonios-space'>
 
-                  <TestimonialsCarousel /> 
+                  <CarruselSwipper /> 
 
                 </aside>
             </section>

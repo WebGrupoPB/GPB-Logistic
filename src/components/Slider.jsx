@@ -4,17 +4,38 @@ import './styles/Slider.scss';
 
 
 // este componente define el contenido del panel, Slider 1 (Hero del Home Page)
-const InfoHeroHome = ({ dataSlider }) => ( 
-      <div className='infoHeroHome-content'>     
-          <p>
-            {dataSlider.text1}
-          </p>
+const InfoHeroHome = ({ dataSlider }) => {
 
-          <p>
-            {dataSlider.text2}
-          </p>       
-      </div>
-);
+  const showText1 = dataSlider.id >= 0 && dataSlider.id <= 1;
+  const showText2 = dataSlider.id >= 2 && dataSlider.id <= 3;
+
+  return (
+        <div className='infoHeroHome-content'> 
+          <article className={`text1 ${showText1 ? 'visible' : 'hidden'}`}>
+            <p>
+              <span>GPB Logistic</span> nació de la <span>necesidad</span> al darnos cuenta de las limitadas 
+              opciones de logística de <span>calidad</span> en Guatemala, nos propusimos redefinir los estándares.
+            </p>
+
+            <p>
+              Hoy no somos <span>solo</span> una empresa de transporte de carga, buscamos ser 
+              tu <span>socio</span> logístico a <span>largo plazo</span>.
+            </p>
+          </article>
+
+          <article className={`text2 ${showText2 ? 'visible' : 'hidden'}`}>
+            <p>
+              <span>Logística</span> sin Contratiempos, <span>Compromiso Incansable</span> en un mundo 
+              donde la logística debería ser la última de tus preocupaciones, 
+              estamos aquí para asumir la <span>responsabilidad</span>.
+            </p>
+          </article>          
+        </div>
+
+  );
+};
+  
+      
 
 
 

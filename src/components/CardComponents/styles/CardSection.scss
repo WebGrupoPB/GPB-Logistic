@@ -1,5 +1,5 @@
 section.Cards-section { 
-    /* background-color: blue; */
+    /* background-color: red; */
     width: 100%;
     min-height: 35vh;
     /* margin-top: 5vh; */
@@ -46,5 +46,36 @@ section.Cards-section-forEmpresas {
         justify-content: center;
 
         gap: 4vw;
+    }
+}
+
+section.Cards-section-forValores { 
+    /* background-color: red; */
+    width: 100%;
+    height: 95%;
+
+    display: grid;
+    place-items: center;
+
+    position: relative;
+    /* top: 5vh; */
+
+     div.Cards-space { 
+        /* background-color: yellow; */
+        width: 100%;
+        height: 100%;
+
+        display: flex;  /* Mantenemos flex */
+        flex-wrap: wrap;
+        justify-content: center;
+
+        & > *:first-child {
+            margin-right: 2vw;  
+            margin-bottom: 0vw; 
+        }
+
+        & > *:nth-child(3n) {
+            margin-right: 2vw;  
+        }
     }
 }

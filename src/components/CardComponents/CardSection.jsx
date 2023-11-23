@@ -17,10 +17,8 @@ const CardSection = ({cardInfo, category}) => {
                 {cardInfo.map((card) => (
 
                     <Card 
-                        key={card.id} 
-                        text={card.text} 
-                        image={card.imageURL} 
-                        linkTo={card.link} 
+                        key={card.id}
+                        cardInfo={card}
                         category={category}
                     />
                     
