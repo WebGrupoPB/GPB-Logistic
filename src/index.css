@@ -3,6 +3,11 @@
     src: url('https://s3.amazonaws.com/gpblogistic.com/assets/HelveticaNeueLTStd-Lt.otf') format('truetype');
   }
 
+@font-face {
+  font-family: 'kommon Grotesk';
+  src: url('https://s3.amazonaws.com/gpblogistic.com/Recursos-GPB-Logistic/General/Fonts/Kommon+Grotesk+Com+Regular.otf') format('truetype');
+}
+
 
 body {
     font-family: 'Helvetica', sans-serif;

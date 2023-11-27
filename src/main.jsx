@@ -6,6 +6,8 @@ import Cobertura from './routes/Cobertura.jsx';
 import ScrollContainer from './components/ScrollContainer.jsx';
 import CarruselSwipper from './components/CarruselSwipper.jsx';
 import Galleria from './components/Gallery.jsx';
+import Counter from './components/Counter.jsx';
+import Servicios from './routes/Servicios.jsx';
 
 
 import './index.css'
@@ -25,6 +27,10 @@ import {
      element: <Home />,
      errorElement: <h1>Error Page :c</h1>,
    },
+   {
+    path: "/servicios",
+    element: <Servicios/>,
+  },
   {
     path: "/cobertura",
     element: <Cobertura/>,
@@ -44,6 +50,10 @@ import {
   {
     path: "/galeria",
     element: <Galleria />,
+  },
+  {
+    path: "/counter",
+    element: <Counter />,
   },
 
 

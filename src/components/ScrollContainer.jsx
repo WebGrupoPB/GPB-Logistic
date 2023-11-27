@@ -22,9 +22,9 @@ export default function ScrollContainer() {
         scrollbar={true}
         mousewheel={true}
         modules={[FreeMode, Scrollbar, Mousewheel]}
-        className="mySwiper"
+        className="mySwiper-scroll"
       >
-        <SwiperSlide >
+        <SwiperSlide className='swipperSlide-scroll' >
           {/* <h4>Scroll Container</h4> */}
           <p>
             En GPB Logistic, nos enorgullece servir a Guatemala, siendo su socio logístico de confianza. 

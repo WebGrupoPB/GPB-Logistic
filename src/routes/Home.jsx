@@ -7,6 +7,7 @@ import Decoradores from '../components/Decoradores';
 import Slider from '../components/Slider';
 import Galleria from '../components/Gallery'
 import CardSection from '../components/CardComponents/CardSection';
+import Counter from '../components/Counter';
 import TestimonialsCarousel from '../components/Carrusel';
 import CarruselSwipper from '../components/CarruselSwipper';
 import Footer from '../components/Footer';
@@ -171,25 +172,51 @@ const Home = () => {
             </section>
 
             <section className='cifras-section'>
-                <article className='title'>
-                    <h1>GPB LOGISTIC EN CIFRAS</h1>
-                </article>
+              <article className='title'>
+                <h1>GPB LOGISTIC EN CIFRAS</h1>
+              </article>
 
-                <aside className='cifras-space'>
+              <aside className='cifras-space'>
+                  <div className='cifra-item'>
+                      <img src="https://s3.amazonaws.com/gpblogistic.com/Recursos-GPB-Logistic/Home/contador/contador-img1.svg" alt="contador-icon-combustible" />
+                      <h4>Combustible</h4>
+                      <Counter numLimit={45000000}/>
+                      <span>galones</span>
+                  </div>
 
-                </aside>
+                  <div className='cifra-item'>
+                    <img src="https://s3.amazonaws.com/gpblogistic.com/Recursos-GPB-Logistic/Home/contador/contador-img2.svg" alt="contador-icon-contenedores" />
+                    <h4>Contenedores</h4>
+                    <Counter numLimit={6700}/>
+                    <span>unidades</span>
+                  </div>
+
+                  <div className='cifra-item'>
+                    <img src="https://s3.amazonaws.com/gpblogistic.com/Recursos-GPB-Logistic/Home/contador/contador-img3.svg" alt="contador-icon-asfalto" />
+                    <h4>Asfalto</h4>
+                    <Counter numLimit={15000000}/>
+                    <span>galones</span>
+                  </div>
+
+                  <div className='cifra-item'>
+                    <img src="https://s3.amazonaws.com/gpblogistic.com/Recursos-GPB-Logistic/Home/contador/contador-img2.svg" alt="contador-icon-paquetes" />
+                    <h4>Entregas</h4>
+                    <Counter numLimit={60000}/>
+                    <span>paquetes</span>
+                  </div>
+          
+
+              </aside>
             </section>
 
             <section className='testimonios-section'>
-                <article className='title'>
-                    <h1>TESTIMONIOS</h1>
-                </article>
+              <article className='title'>
+                  <h1>TESTIMONIOS</h1>
+              </article>
 
-                <aside className='testimonios-space'>
-
-                  <CarruselSwipper /> 
-
-                </aside>
+              <aside className='testimonios-space'>
+                <CarruselSwipper /> 
+              </aside>
             </section>
 
             

@@ -1,0 +1,392 @@
+@font-face {
+    font-family: 'kommon Grotesk';
+    src: url('https://s3.amazonaws.com/gpblogistic.com/Recursos-GPB-Logistic/General/Fonts/Kommon+Grotesk+Com+Regular.otf') format('truetype');
+  }
+  
+// Define la animación slideIn desde la derecha
+@keyframes slideInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(100%);
+        right: -5vw; // Agrega esta línea
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+        right: 0vw; // Ajusta este valor según sea necesario
+    }
+}
+
+// Define la animación slideIn desde la izquierda
+@keyframes slideInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes zoomIn {
+    0% {
+      transform: scale(0);
+      opacity: 0;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+
+@keyframes pop {
+    5% { 
+        transform: scale(1); 
+    }
+    10% { 
+        transform: scale(1.15); 
+    }
+    15% { 
+        transform: scale(1); 
+    }
+  }
+
+
+
+section.hero-space-2 { 
+    /* background-color: blue; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 70vh;
+
+    margin-top: 0vh;
+    margin-bottom: 0vh;
+
+    div.hero-banner-servicios {
+        background-image: url("https://s3.amazonaws.com/gpblogistic.com/Recursos-GPB-Logistic/Servicios/servicios-banner.png");
+        background-size: 100% 100%;
+        width: 92%;
+        height: 60vh;
+
+        display: grid;
+        place-items: center;
+
+        h1 { 
+            color: #FFF;
+            font-size: 6rem;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal; 
+        }
+    }
+}
+
+
+section.Servicios-section { 
+    /* background-color: green; */
+    width: 100%;
+    height: 110vh;
+    display: grid;
+    place-items: center;
+    margin-bottom: 10vh;
+
+    article.title {
+        /* background-color: red; */
+        width: 100%;
+        height: 18vh;
+        display: flex; 
+        align-items: center;
+        justify-content: start;
+
+        h1 {
+            margin-left: 4vw;
+            text-transform: uppercase;
+            color: #000;
+            font-size: 3rem;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 85.3%; /* 42.65px */
+
+            animation: slideInLeft 2s ease-in-out;
+        }
+    }
+
+    aside.serviciosContent-space { 
+        /* background-color: blue; */
+        width: 80%;
+        height: 92vh;
+
+        display: grid;
+        place-items: center;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        gap: 10vw;
+
+        div.servicioContent-card {
+            border-radius: 5vb;
+            background-color: #FFF;
+            box-shadow: 3px 8px 40.6px -3px rgba(0, 0, 0, 0.25);
+            width: calc(70vw/2);
+            height: 92vh;
+
+            display: grid;
+            place-items: center;
+
+            header.servicio-title {
+                /* background-color: blue; */
+                width: 100%;
+                height: 55.2vh;
+                border-radius: 5vb 5vb 0px 0;
+                border-bottom: 1px solid #CECECE;
+
+                position: relative;
+                display: grid;
+                place-items: center;
+
+                h3 { 
+                    position: absolute;
+                    top: 0vh;
+                    left: 3vw;
+
+                    text-transform: uppercase;
+                    color: #000;
+                    font-family: 'Kommon Grotesk', sans-serif;
+                    font-size: 2rem;
+                    font-style: normal;
+                    font-weight: 900;
+                    line-height: 84.7%; /* 46.585px */      
+                }
+
+                img { 
+                    width: 25vw;
+                    height: auto;
+                    cursor: pointer;
+                    transition: 1s;
+
+                    &:hover { 
+                        transform: scale(1.2);
+                    }
+                }
+            }
+
+            article.servicio-text {
+                /* background-color: yellow; */
+                width: 100%;
+                height: 36.8vh;
+                border-radius: 0 0 5vb 5vb;
+
+                display: grid;
+                place-items: center;
+
+                p {
+                    width: 80%;
+                    color: #000;
+                    font-family: 'Kommon Grotesk', sans-serif;
+                    font-size: 1.5rem;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 84.7%; /* 33.88px */
+                }
+            }
+        }
+    }
+}
+
+section.sliderServicios-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 90vh;
+    overflow: hidden;
+    
+    margin-top: 0vh;
+    margin-bottom: 10vh;
+
+    position: relative;
+
+    div.hero-slider{
+        width: 90%;
+        height: 90vh;
+
+        position: relative;
+
+        aside.hero-title {
+            position: absolute;
+            top: 3vh;
+            left: 0;
+
+            animation: slideInLeft 2s ease-in-out;
+
+            z-index: 1;
+
+            h1 { 
+                /* width: 50vw; */
+                color: #FFF;
+                font-size: 2.8rem;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal; 
+                
+                margin: .5vh 0;
+                margin-left: 1vw;
+            }
+
+            div { 
+                background-color: #FFF;
+                width: 52vw;
+                height: .5vh;
+            }
+        }
+      }
+  }
+
+
+  section.cifrasServicios-section { 
+    /* background-color: green; */
+    width: 100%;
+    height: 40vh;
+    margin: 0; /* Ajusta el margen a 0 */
+    margin-bottom: 5vh;
+    padding: 0; /* Ajusta el relleno a 0 */
+
+    /* margin-top: 2.5vh; */
+    display: grid;
+    place-items: center;
+
+    article.title {
+        /* background-color: red;  */
+        width: 100%;
+        height: 8vh;
+
+        display: flex;
+        align-items: center;
+        justify-content: start;
+
+        h1 { 
+            color: #000;
+            font-size: 3.25rem;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 85.3%; /* 42.65px */
+            letter-spacing: -3.75px;
+
+            margin-left: 5vw;
+            margin-top: 6vh;
+
+            animation: slideInLeft 2s ease-in-out;
+        }
+    }
+
+    aside.cifras-space {
+        /* background-color: yellow; */
+        max-width: 90%;
+        height: 20vh;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2vw;
+
+        /* overflow: hidden; */
+
+        div.cifra-item {
+            background: #FFF;
+            box-shadow: 0px 4px 24.3px 4px rgba(0, 0, 0, 0.25);
+            width: calc(85vw/4);
+            height: 100%;
+            /* border: 1px solid #fff; */
+            border-left: 1vw solid #DC3028;
+
+            display: grid;
+            place-items: center;
+
+            p { 
+                color: #6B6B6B;
+                text-align: center;
+                font-family: 'Kommon Grotesk', sans-serif;
+                font-size: 1.5rem;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 85.3%; /* 38.385px */
+                letter-spacing: -2px;
+
+                margin: 2vh 0 .5vh 0;
+            }
+
+            h3 { 
+                width: 90%;
+
+                color: #000;
+                text-align: center;
+                font-family: 'Kommon Grotesk', sans-serif;
+                font-size: 1.5rem;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 85.3%; /* 34.12px */
+                letter-spacing: -2px;
+
+                margin: 0.5vh 1vw 2vh 0;
+
+                span { 
+                    font-size: 1rem;
+                }
+            }
+        }
+    }       
+}
+
+
+section.testimonios-section-servicios { 
+    /* background-color: green; */
+    width: 100%;
+    height: 92vh;
+    margin: 0; /* Ajusta el margen a 0 */
+    padding: 0; /* Ajusta el relleno a 0 */
+    margin-bottom: 5vh;
+
+    /* margin-top: 2.5vh; */
+
+    article.title {
+        /* background-color: red;  */
+        width: 100%;
+        height: 0vh;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        h1 { 
+            width: 50vw;
+            text-align: center;
+            color: #101820;
+            font-size: 2.5rem;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 85.3%; /* 42.65px */
+            letter-spacing: -3.75px;
+            margin: 1vh 0;
+
+            animation: zoomIn 2s ease-in-out;
+
+            span { 
+               color: #DA291C;
+            }
+        }
+    }
+
+    aside.testimonios-space {
+        /* background-color: #101820; */
+        width: 100%;
+        height: 75vh;
+
+        display: grid;
+        place-items: center;
+
+        /* overflow: hidden; */
+
+    }       
+}

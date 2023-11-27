@@ -54,7 +54,23 @@ const Footer = () => {
         </article>
 
         <aside className='footer-map'>
-            {/* <GoogleMaps /> */}
+            <div className='menu-space'>
+                <h4>Menú</h4>
+                <ul>
+                    <li className='menu-item'>
+                        <Link>- Inicio</Link>
+                    </li>
+                    <li className='menu-item'>
+                        <Link>- Servicios</Link>
+                    </li>
+                    <li className='menu-item'>
+                        <Link>- Cobertura</Link>
+                    </li>
+                    <li className='menu-item'>
+                        <Link>- Clientes</Link>
+                    </li>
+                </ul>          
+            </div>
         </aside>
     </footer>
   );

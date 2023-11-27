@@ -34,7 +34,18 @@ const InfoHeroHome = ({ dataSlider }) => {
 
   );
 };
-  
+
+
+const ServiciosInfo = ({dataSlider}) => {
+
+  return (
+    <div className='ServiciosInfo-content'>
+      <h1>
+        {dataSlider.text}
+      </h1>
+    </div>
+  )
+}  
       
 
 
@@ -47,6 +58,7 @@ const Panel = ({ panelInfo, dataSlider, activeID }) => {
         <aside className={panelClassName}>
 
         {panelInfo === 'heroHome' && <InfoHeroHome dataSlider={dataSlider[activeID]} />}
+        {panelInfo === 'servicios' && <ServiciosInfo dataSlider={dataSlider[activeID]} />}
 
         </aside>
     );

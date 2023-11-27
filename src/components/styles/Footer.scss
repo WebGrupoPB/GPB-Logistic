@@ -166,7 +166,39 @@ footer.footer-space {
         width: 35vw;
         height: 40vh;
 
-        display: grid;
-        place-items: center;
+        display: flex;
+        align-items: start;
+        justify-content: center;
+
+        div.menu-space {
+            /* background-color: red; */
+            width: 15vw;
+            height: 25vh;
+            margin-top: 2.5vh;
+
+            h4 { 
+                color: #FFF;
+                font-family: 'Montserrat', sans-serif;
+                font-size: 1rem;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+            }
+
+            li.menu-item { 
+                list-style: none; // Quitar las viñetas
+                color: #fff;
+
+                a { 
+                    text-decoration: none;
+                    color: #FFF;
+                    font-family: 'Montserrat', sans-serif;
+                    font-size: .9rem;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                }
+            }
+        }
     }
 }
