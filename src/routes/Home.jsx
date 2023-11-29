@@ -1,8 +1,10 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect, useRef } from 'react';
+import { useInView } from 'react-intersection-observer';
 import { Link } from 'react-router-dom';
 import { Element, scroller } from 'react-scroll';
 
 import Navbar from '../components/Navbar';
+import AnimatedTitle from '../components/AnimationTrigger';
 import Decoradores from '../components/Decoradores';
 import Slider from '../components/Slider';
 import Galleria from '../components/Gallery'
@@ -70,11 +72,44 @@ const dataHero = [
 
 
 
+
+
+
 const Home = () => {
+
+  const [scrollPosition, setScrollPosition] = useState(0);
+
+  const handleScroll = () => {
+    setScrollPosition(window.scrollY);
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
+
+  // Define la altura en vh a partir de la cual los decoradores deben aparecer
+  const thresholdVh = 100;
+
+  // Calcula si los decoradores deben aparecer o desaparecer
+  const shouldShowDecoradores = scrollPosition > window.innerHeight * thresholdVh / 100;
+
+
+  // Usa useInView para detectar la visibilidad del elemento
+  const [ref, inView] = useInView({
+    triggerOnce: true, // Solo activa una vez
+    threshold: 0.5, // Personaliza el umbral según tus necesidades
+  });
+
+  // Aplica una clase si el elemento está en la vista
+  const titleClass = inView ? 'visible' : 'hidden';
+
 
 
     return (
@@ -84,7 +119,7 @@ const Home = () => {
         </header>
 
         <main>
-            {/* <Decoradores /> */}
+            {shouldShowDecoradores && <Decoradores />}
 
             <section className='hero-space' id="hero-space">
                 <div className='hero-slider'>
@@ -98,9 +133,9 @@ const Home = () => {
             </section>
 
             <section className='propuesta-section'>
-                <article className='title'>
-                    <h1>PROPUESTAS DE VALOR</h1>
-                </article>
+              <article className='title'>
+                <h1 ref={ref} className={titleClass}>PROPUESTAS DE VALOR</h1>
+              </article>
 
                 <aside className='propuesta-space'>
                     <div className='valoresOverlay-space'>
@@ -181,31 +216,29 @@ const Home = () => {
                       <img src="https://s3.amazonaws.com/gpblogistic.com/Recursos-GPB-Logistic/Home/contador/contador-img1.svg" alt="contador-icon-combustible" />
                       <h4>Combustible</h4>
                       <Counter numLimit={45000000}/>
-                      <span>galones</span>
+                      <span className='span-cifra'>galones</span>
                   </div>
 
                   <div className='cifra-item'>
                     <img src="https://s3.amazonaws.com/gpblogistic.com/Recursos-GPB-Logistic/Home/contador/contador-img2.svg" alt="contador-icon-contenedores" />
                     <h4>Contenedores</h4>
                     <Counter numLimit={6700}/>
-                    <span>unidades</span>
+                    <span className='span-cifra'>unidades</span>
                   </div>
 
                   <div className='cifra-item'>
                     <img src="https://s3.amazonaws.com/gpblogistic.com/Recursos-GPB-Logistic/Home/contador/contador-img3.svg" alt="contador-icon-asfalto" />
                     <h4>Asfalto</h4>
                     <Counter numLimit={15000000}/>
-                    <span>galones</span>
+                    <span className='span-cifra'>galones</span>
                   </div>
 
                   <div className='cifra-item'>
                     <img src="https://s3.amazonaws.com/gpblogistic.com/Recursos-GPB-Logistic/Home/contador/contador-img2.svg" alt="contador-icon-paquetes" />
                     <h4>Entregas</h4>
                     <Counter numLimit={60000}/>
-                    <span>paquetes</span>
+                    <span className='span-cifra'>paquetes</span>
                   </div>
-          
-
               </aside>
             </section>
 

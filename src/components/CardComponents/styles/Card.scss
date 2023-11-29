@@ -28,58 +28,6 @@
     }
 }
 
-div.Card-section { 
-    /* background-color: red; */
-    width: 15vw;
-    height: 35vh;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-    /* cursor: pointer; */
-    text-decoration: none;
-
-    aside.image-card-space{ 
-        background-color: #CDD1D4;
-        width: 100%;
-        height: 75%;
-        border-radius: 30px 30px 0px 0px;
-        border: 2px solid #000;
-        border-bottom: 0px;
-        overflow: hidden;
-
-        img { 
-            width: 100%;
-            height: 100%;
-        }
-
-    }
-
-    article.text-card-space{
-        background-color: #fff;
-        width: 100%;
-        height: 25%;
-        border-radius: 0px 0px 30px 30px;
-        border: 2px solid #000;
-
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-        h1 { 
-            width: 80%;
-            color: #000;
-            font-size: 16px;
-            font-style: normal;
-            font-weight: 800;
-            line-height: 124%; /* 24.8px */
-            text-align: center;
-        }
-    }
-}
-
 
 div.Card-section-forEmpresas { 
     /* background-color: red; */
@@ -118,7 +66,7 @@ div.Card-section-forEmpresas {
 
 div.Card-section-forValores { 
     background-color: #fff;
-    border-left: 7px solid #DA291C;
+    border-left: 0.5vw solid #DA291C;
     box-shadow: 5px 0px 9.9px 0px rgba(0, 0, 0, 0.50);
     
     width: 25vw;
@@ -140,7 +88,7 @@ div.Card-section-forValores {
             width: 18vw;
             margin: 1.5vh 0 .5vh 1vw;
             color: #000;
-            font-size: 1.2rem;
+            font-size: 1.5vw;
             font-style: normal;
             font-weight: 700;
             line-height: 135.3%; /* 24.354px */
@@ -151,7 +99,7 @@ div.Card-section-forValores {
             margin: .5vh 0 .5vh 1vw;
             width: 15vw;
             color: #000;
-            font-size: 1rem;
+            font-size: 1.2vw;
             font-style: normal;
             font-weight: 300;
             line-height: 135.3%; /* 20.295px */
@@ -173,6 +121,106 @@ div.Card-section-forValores {
 
             animation: rotate 3s ease infinite;
             animation-delay: 2s;
+        }
+    }
+}
+
+/*************** Pantallas tablet (768px) y tablet L (1024px) con orientacion vertical  *******************/
+@media (min-width: 750px) and (max-width: 1025px) and (orientation: portrait) {
+
+    div.Card-section-forEmpresas { 
+        /* background-color: red; */
+        width: 20vw;
+        height: 35vh;
+    
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    
+        /* cursor: pointer; */
+        text-decoration: none;
+    
+        aside.image-card-space{ 
+            /* background-color: #CDD1D4; */
+            background-color: transparent;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+    
+            display: grid;
+            place-items: center;
+    
+            img { 
+                width: 15vw;
+                height: auto;
+            }
+    
+        }
+    
+        article.text-card-space{
+            display: none;
+        }
+    }
+    
+    div.Card-section-forValores { 
+        background-color: #fff;
+        border-left: 1vw solid #DA291C;
+        box-shadow: 5px 0px 9.9px 0px rgba(0, 0, 0, 0.50);
+        
+        width: 33vw;
+        height: 20vh;
+        
+    
+        display: flex;
+    
+    
+        /* cursor: pointer; */
+        text-decoration: none;
+    
+        article.text-card { 
+            /* background-color: blue; */
+            width: 20vw;
+            height: 20vh;
+    
+            h3 { 
+                width: 18vw;
+                margin: 1.5vh 0 .5vh 1vw;
+                color: #000;
+                font-size: 2vw;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 135.3%; /* 24.354px */
+                letter-spacing: -1.35px;
+            }
+    
+            p {
+                margin: .5vh 0 .5vh 1vw;
+                width: 15vw;
+                color: #000;
+                font-size: 1.7vw;
+                font-style: normal;
+                font-weight: 300;
+                line-height: 135.3%; /* 20.295px */
+                letter-spacing: -1.125px;
+            }
+        }
+    
+        div.image-card { 
+            /* background-color: green; */
+            width: 10vw;
+            height: 20vh;
+    
+            display: grid;
+            place-items: center;
+    
+            img.icon-valores {
+                width: 10vw !important;
+                height: auto !important;
+    
+                animation: rotate 3s ease infinite;
+                animation-delay: 2s;
+            }
         }
     }
 }

@@ -3,12 +3,10 @@
     0% {
         opacity: 0;
         transform: translateX(100%);
-        right: -5vw; // Agrega esta línea
     }
     100% {
         opacity: 1;
         transform: translateX(0);
-        right: 0vw; // Ajusta este valor según sea necesario
     }
 }
 
@@ -79,7 +77,7 @@ section.hero-space {
             h1 { 
                 /* width: 50vw; */
                 color: #FFF;
-                font-size: 2.8rem;
+                font-size: 2.8vw;
                 font-style: normal;
                 font-weight: 700;
                 line-height: normal; 
@@ -117,7 +115,7 @@ section.propuesta-section {
 
         h1 { 
             color: #000;
-            font-size: 3.25rem;
+            font-size: 3.25vw;
             font-style: normal;
             font-weight: 700;
             line-height: 85.3%; /* 42.65px */
@@ -126,6 +124,18 @@ section.propuesta-section {
             margin-right: 5vw;
             margin-top: 6vh;
 
+            /* transform: translateX(100%); 
+
+            &.visible { 
+              opacity: 1; 
+              transform: translateX(0); 
+            }
+        
+            &.hidden {
+              opacity: 0;
+              transform: translateX(100%); 
+            } */
+        
             animation: slideInRight 2s ease-in-out;
         }
     }
@@ -187,7 +197,7 @@ section.propuesta-section {
                         margin: .5vh 0;
 
                         color: #FFF;
-                        font-size: 1.5rem;
+                        font-size: 1.5vw;
                         font-style: normal;
                         font-weight: 700;
                         line-height: 85.3%; /* 25.59px */
@@ -197,7 +207,7 @@ section.propuesta-section {
                     p { 
                         color: #FFF;
                         font-family: Helvetica;
-                        font-size: 1rem;
+                        font-size: 1vw;
                         font-style: normal;
                         font-weight: 400;
                         line-height: 16px; /* 12.795px */
@@ -240,7 +250,7 @@ section.gallery-section {
             width: 50vw;
             text-align: center;
             color: #101820;
-            font-size: 2.5rem;
+            font-size: 2.5vw;
             font-style: normal;
             font-weight: 700;
             line-height: 85.3%; /* 42.65px */
@@ -298,7 +308,7 @@ section.valores-section {
 
         h1 { 
             color: #000;
-            font-size: 3.25rem;
+            font-size: 3.25vw;
             font-style: normal;
             font-weight: 700;
             line-height: 85.3%; /* 42.65px */
@@ -380,7 +390,7 @@ section.cifras-section {
 
         h1 { 
             color: #000;
-            font-size: 3.25rem;
+            font-size: 3.25vw;
             font-style: normal;
             font-weight: 700;
             line-height: 85.3%; /* 42.65px */
@@ -420,7 +430,7 @@ section.cifras-section {
 
             h4 { 
                 color: #000;
-                font-size: 1.5rem;
+                font-size: 2vw;
                 font-style: normal;
                 font-weight: 600;
                 line-height: 85.3%; /* 34.12px */
@@ -432,7 +442,7 @@ section.cifras-section {
             div.counter { 
                 color: #6B6B6B;
                 text-align: center;
-                font-size: 2rem;
+                font-size: 2vw;
                 font-style: normal;
                 font-weight: 500;
                 line-height: 85.3%; /* 34.12px */
@@ -441,9 +451,9 @@ section.cifras-section {
                 margin: 0.5vh 0;
             }
 
-            span { 
+            span.span-cifra { 
                 color: #6B6B6B;
-                font-size: 1rem;
+                font-size: 1vw;
                 font-style: normal;
                 font-weight: 300;
                 line-height: 85.3%;
@@ -473,7 +483,7 @@ section.testimonios-section {
 
         h1 { 
             color: #000;
-            font-size: 3.25rem;
+            font-size: 3.25vw;
             font-style: normal;
             font-weight: 700;
             line-height: 85.3%; /* 42.65px */
@@ -499,3 +509,475 @@ section.testimonios-section {
     }       
 }
 
+
+
+/*************** Pantallas tablet (768px) y tablet L (1024px) con orientacion vertical  *******************/
+@media (min-width: 750px) and (max-width: 1025px) and (orientation: portrait) {
+    
+    section.hero-space {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 120vh;
+        overflow: hidden;
+        
+        margin-top: 0vh;
+        margin-bottom: 0vh;
+
+        position: relative;
+
+        div.hero-slider{
+            width: 100%;
+            height: 120vh;
+
+            position: relative;
+
+            aside.hero-title {
+                position: absolute;
+                top: 3vh;
+                left: 0;
+
+                animation: slideInLeft 2s ease-in-out;
+
+                z-index: 1;
+
+                h1 { 
+                    /* width: 50vw; */
+                    color: #FFF;
+                    font-size: 4vw;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal; 
+                    
+                    margin: .5vh 0;
+                    margin-left: 1vw;
+                }
+
+                div { 
+                    background-color: #FFF;
+                    width: 55vw;
+                    height: .5vh;
+                }
+            }
+        }
+    }
+
+    section.propuesta-section { 
+        /* background-color: green; */
+        width: 100%;
+        height: 92vh;
+
+        margin-top: 2.5vh;
+        overflow: hidden;
+        padding-top: 1vh;
+
+        article.title {
+            /* background-color: red; */ 
+            width: 100%;
+            height: 7.5vh;
+
+            display: flex;
+            align-items: center;
+            justify-content: end;
+
+            h1 { 
+                color: #000;
+                font-size: 5vw;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 85.3%; /* 42.65px */
+                letter-spacing: -3.75px;
+
+                margin-right: 5vw;
+                margin-top: 6vh;
+
+                /* transform: translateX(100%); 
+
+                &.visible { 
+                opacity: 1; 
+                transform: translateX(0); 
+                }
+            
+                &.hidden {
+                opacity: 0;
+                transform: translateX(100%); 
+                } */
+            
+                animation: slideInRight 2s ease-in-out;
+            }
+        }
+
+        aside.propuesta-space {
+            background-image: url("https://s3.amazonaws.com/gpblogistic.com/Recursos-GPB-Logistic/Home/propuesta/propuesta-fondo.png");
+            background-size: 100% 100%;
+            box-shadow: 0px 9px 26.8px 9px rgba(0, 0, 0, 0.50);
+
+            width: 100%;
+            height: 85vh;
+
+            display: flex;
+            align-items: center;
+            justify-content: center; //cambiar a space-between si se agrega la img
+
+            overflow: hidden;
+
+            div.valoresOverlay-space {
+                background: linear-gradient(150deg, rgba(16, 24, 32, 0.80) 0%, rgba(16, 24, 32, 0.49) 101.92%, rgba(16, 24, 32, 0.20) 101.92%);
+                backdrop-filter: blur(5px);
+                border: 1px solid #101820;
+
+                width: 90vw;
+                height: 75vh;
+
+                position: relative;
+                left: 0vw;
+
+                display: grid;
+                place-items: center;
+
+                div.valores-space { 
+                    /* background-color: blue; */
+                    width: 80vw;
+                    height: 65vh;
+
+                    display: grid;
+                    place-items: center;
+                    grid-template-columns: repeat(2, 1fr); // Dos columnas
+                    grid-template-rows: repeat(2, 1fr);    // Dos filas
+                    gap: 20px;                             // Espacio entre los elementos
+
+                    div.valor-item {
+                        /* border: 1px solid #fff; */
+                        /* background-color: red; */
+                        width: calc(60vw/2);
+                        height: calc(60vh/2);
+
+                        display: grid;
+
+                        img { 
+                            width: 12vw;
+                            height: auto;
+                            margin: .5vh 0;
+                            animation: pop 2.5s ease infinite;
+                            animation-delay: 1.5s;
+                        }
+
+                        h3 { 
+                            width: 50%;
+                            margin: .5vh 0;
+
+                            color: #FFF;
+                            font-size: 3vw;
+                            font-style: normal;
+                            font-weight: 700;
+                            line-height: 85.3%; /* 25.59px */
+                            
+                        }
+
+                        p { 
+                            color: #FFF;
+                            font-family: Helvetica;
+                            font-size: 2vw;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: 16px; /* 12.795px */
+                            text-wrap: pretty;
+                        }
+                    }
+                }
+            }
+
+            img.persona-img {
+                width: auto;
+                height: 80vh;
+
+                position: relative;
+                top: 2.5vh;
+                left: 5vw;
+            }
+        }
+    }
+
+    section.gallery-section { 
+        /* background-color: green; */
+        width: 100%;
+        min-height: 75vh;
+
+        margin-top: 2.5vh;
+        margin-bottom: 5vh;
+        
+
+        article.title {
+            /* background-color: red;  */
+            width: 100%;
+            height: 20vh;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            h1 { 
+                width: 60vw;
+                text-align: center;
+                color: #101820;
+                font-size: 5vw;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 85.3%; /* 42.65px */
+                letter-spacing: -3.75px;
+                margin: 1vh 0;
+
+                animation: zoomIn 2s ease-in-out;
+
+                span { 
+                color: #DA291C;
+                }
+            }
+        }
+
+        aside.gallery-space {
+            background-color: blue;
+
+            width: 100%;
+            min-height: 100vh;
+
+            display: grid;
+            place-items: center;
+
+            overflow: hidden;
+            
+            div { 
+                width: 100%;
+                /* min-height: 100vh; */
+
+                display: grid;
+                place-items: center;
+            }
+        }
+    }
+
+    section.valores-section { 
+        /* background-color: green; */
+        width: 100%;
+        min-height: 50vh;
+
+        margin-top: 2.5vh;
+        margin-bottom: 0vh;
+
+        overflow: hidden;
+        
+
+        article.title {
+            /* background-color: red; */ 
+            width: 100%;
+            height: 15vh;
+
+            display: flex;
+            align-items: center;
+            justify-content: end;
+
+            h1 { 
+                color: #000;
+                font-size: 5vw;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 85.3%; /* 42.65px */
+                letter-spacing: -3.75px;
+
+                margin-right: 4vw;
+                margin-bottom: 8vh;
+
+                animation: slideInRight 2s ease-in-out;
+            }
+        }
+
+        div.valores-space {
+            /* background-color: red; */
+
+            width: 100%;
+            height: 75vh;
+
+            display: grid;
+            place-items: center;
+
+            aside.valores-marco {
+                /* background-color: blue; */
+                width: 95%;
+                height: 75vh;
+
+                display: flex;
+                align-items: center;
+                justify-content: end;
+
+                position: relative;
+                right: 0vw;
+
+                div.valores-info-space {
+                    /* background-color: yellow; */
+                    /* border: 1px solid #000; */
+                    width: 75vw;
+                    height: 75vh;
+                    z-index: 1;
+                    
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    position: absolute;
+                    left: 0vw;
+                }
+
+                img { 
+                    width: auto;
+                    height: 50vh;
+                    
+                }
+            }
+        }
+    }
+
+
+    section.cifras-section { 
+        /* background-color: green; */
+        width: 100%;
+        height: 40vh;
+        margin: 0; /* Ajusta el margen a 0 */
+        margin-bottom: 5vh;
+        padding: 0; /* Ajusta el relleno a 0 */
+
+        /* margin-top: 2.5vh; */
+        display: grid;
+        place-items: center;
+
+        article.title {
+            /* background-color: red; */ 
+            width: 100%;
+            height: 8vh;
+
+            display: flex;
+            align-items: center;
+            justify-content: start;
+
+            h1 { 
+                color: #000;
+                font-size: 5vw;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 85.3%; /* 42.65px */
+                letter-spacing: -3.75px;
+
+                margin-left: 5vw;
+                margin-top: 6vh;
+
+                animation: slideInLeft 2s ease-in-out;
+            }
+        }
+
+        aside.cifras-space {
+            /* background-color: yellow; */
+            width: 80%;
+            height: 20vh;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            /* overflow: hidden; */
+
+            div.cifra-item {
+                /* background-color: yellow; */
+                width: calc(100%/4);
+                height: 100%;
+                /* border: 1px solid #fff; */
+
+                display: grid;
+                place-items: center;
+
+                img { 
+                    width: 9vw;
+                    height: auto;
+                }
+
+                h4 { 
+                    color: #000;
+                    font-size: 2.75vw;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 85.3%; /* 34.12px */
+                    letter-spacing: 0px;
+                    
+                    margin: 0.5vh 0;
+                }
+
+                div.counter { 
+                    color: #6B6B6B;
+                    text-align: center;
+                    font-size: 3vw;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 85.3%; /* 34.12px */
+                    letter-spacing: -2px;
+
+                    margin: 0.5vh 0;
+                }
+
+                span.span-cifra { 
+                    color: #6B6B6B;
+                    font-size: 2vw;
+                    font-style: normal;
+                    font-weight: 300;
+                    line-height: 85.3%;
+                    letter-spacing: 0px;
+                }
+            }
+        }       
+    }
+
+    section.testimonios-section { 
+        /* background-color: green; */
+        width: 100%;
+        height: 50vh;
+        margin-bottom: 10vh; /* Ajusta el margen a 0 */
+        padding: 0; /* Ajusta el relleno a 0 */
+
+        /* margin-top: 2.5vh; */
+
+        article.title {
+            /* background-color: red; */ 
+            width: 100%;
+            height: 7.5vh;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            h1 { 
+                color: #000;
+                font-size: 5vw;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 85.3%; /* 42.65px */
+                letter-spacing: -3.75px;
+
+                margin-left: 0vw;
+                margin-top: 6vh;
+
+                animation: zoomIn 2s ease-in-out;
+            }
+        }
+
+        aside.testimonios-space {
+            /* background-color: #101820; */
+            width: 100%;
+            height: 42vh;
+
+            display: grid;
+            place-items: center;
+
+            /* overflow: hidden; */
+
+        }       
+    }
+
+}

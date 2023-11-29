@@ -100,7 +100,7 @@ const Cobertura = () => {
             <section className='testimonios-section-cobertura'>
                  <article className='title'>
                     <h1>
-                        A <span>una</span> llamada y <span>un</span> contacto para <span>solucionar</span> su logística
+                        A <span>una</span> llamada y a <span>un</span> contacto para <span>solucionar</span> su logística
                     </h1>
                 </article>
 

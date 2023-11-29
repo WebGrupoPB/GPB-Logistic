@@ -11,7 +11,7 @@ aside.textDecoration-space {
     align-items: center;
     justify-content: start;
 
-    z-index: 10;
+    z-index: 500;
 
     div.line-decoration { 
         background-color: #DA291C;
@@ -34,7 +34,7 @@ aside.textDecoration-space {
             transform: rotate(90deg); 
             text-transform: uppercase;
             color: #FFF;
-            font-size: 1rem;
+            font-size: 1vw;
             font-style: normal;
             font-weight: 700;
             line-height: normal;
@@ -43,7 +43,7 @@ aside.textDecoration-space {
             white-space: nowrap;
             
             position: relative;
-            bottom: 3.5vh;
+            bottom: 0vh;
         }
     }
 }
@@ -60,13 +60,13 @@ aside.textDecoration-space {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    z-index: 10;
+    z-index: 500;
     
     .circle-icon {
         background-color: #DA291C;
         width: 5vw;
         height: 5vw;
-        border-radius: 8px 0px 0px 8px;
+        border-radius: 0.5vw 0 0 0.5vw;
 
 
         display: flex;
@@ -84,28 +84,28 @@ aside.textDecoration-space {
       position: absolute;
       bottom: 15%;
       right: 100%;  
-      width: 12rem;
-      height: 4rem;
+      width: 15vw;
+      height: 5vw;
       /* border: 1px solid red; */
       display: flex;
         
       .squareBubble {
         background-color: #fff;
-        width: 12rem;
-        height: 4rem;
-        border: 1px solid #000;
-        border-radius: 8px;
+        width: 15vw;
+        height: 5vw;
+        border: 0.1vb solid #000;
+        border-radius: 0.5vw;
         line-height: 1px;
         text-align: left;
   
         h4 {
-          margin-left: 12px;
-          font-size: 1rem;
+          margin-left: 0.75vw;
+          font-size: 1.2vw;
         }
           
         p {
-          margin-left: 12px;
-          font-size: .8rem;
+          margin-left: 0.75vw;
+          font-size: 1vw;
         }
       }
           
@@ -115,9 +115,9 @@ aside.textDecoration-space {
       top: 55%;
       width: 0;
       height: 0;
-      border-top: 10px solid transparent; /* Lado izquierdo transparente */
-      border-bottom: 10px solid transparent; /* Lado derecho transparente */
-      border-left: 20px solid #000; /* Lado inferior sólido (el color define el color del triángulo) */
+      border-top: 0.625vw solid transparent; /* Lado izquierdo transparente */
+      border-bottom: 0.625vw solid transparent; /* Lado derecho transparente */
+      border-left: 1.25vw solid #000; /* Lado inferior sólido (el color define el color del triángulo) */
       }  
     }   
   }

@@ -9,6 +9,10 @@ import './styles/Footer.scss';
 
 const Footer = () => {
 
+    const scrollToTop = () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      };
+
   return (
     <footer className='footer-space'>
         <header className='footer-logo'>
@@ -58,16 +62,16 @@ const Footer = () => {
                 <h4>Menú</h4>
                 <ul>
                     <li className='menu-item'>
-                        <Link>- Inicio</Link>
+                        <Link to={"/"} onClick={scrollToTop}>- Inicio</Link>
                     </li>
                     <li className='menu-item'>
-                        <Link>- Servicios</Link>
+                        <Link to={"/servicios"} onClick={scrollToTop}>- Servicios</Link>
                     </li>
                     <li className='menu-item'>
-                        <Link>- Cobertura</Link>
+                        <Link to={"/cobertura"} onClick={scrollToTop}>- Cobertura</Link>
                     </li>
                     <li className='menu-item'>
-                        <Link>- Clientes</Link>
+                        <Link to={"/clientes"} onClick={scrollToTop}>- Clientes</Link>
                     </li>
                 </ul>          
             </div>

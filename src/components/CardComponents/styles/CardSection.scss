@@ -1,28 +1,4 @@
-section.Cards-section { 
-    /* background-color: red; */
-    width: 100%;
-    min-height: 35vh;
-    /* margin-top: 5vh; */
-    margin-bottom: 10vh;
 
-    display: grid;
-    place-items: center;
-
-    position: relative;
-    /* top: 5vh; */
-
-    div.Cards-space { 
-        /* background-color: red; */
-        width: 95%;
-        min-height: 35vh;
-
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-
-        gap: 4.65vw;
-    }
-}
 
 section.Cards-section-forEmpresas { 
     /* background-color: blue; */
@@ -76,6 +52,65 @@ section.Cards-section-forValores {
 
         & > *:nth-child(3n) {
             margin-right: 2vw;  
+        }
+    }
+}
+
+/*************** Pantallas tablet (768px) y tablet L (1024px) con orientacion vertical  *******************/
+@media (min-width: 750px) and (max-width: 1025px) and (orientation: portrait) {
+    section.Cards-section-forEmpresas { 
+        /* background-color: blue; */
+        width: 100%;
+        min-height: 35vh;
+        margin-bottom: 10vh;
+    
+        display: grid;
+        place-items: center;
+    
+        position: relative;
+        /* top: 5vh; */
+    
+        div.Cards-space { 
+            /* background-color: red; */
+            width: 95%;
+            min-height: 35vh;
+    
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+    
+            gap: 4vw;
+        }
+    }
+    
+    section.Cards-section-forValores { 
+        /* background-color: red; */
+        width: 100%;
+        height: 100%;
+    
+        display: grid;
+        place-items: center;
+    
+        position: relative;
+        /* top: 5vh; */
+    
+         div.Cards-space { 
+            /* background-color: yellow; */
+            width: 100%;
+            height: 100%;
+    
+            display: flex;  /* Mantenemos flex */
+            flex-wrap: wrap;
+            justify-content: center;
+    
+            & > *:first-child {
+                margin-right: 5vw;  
+                margin-bottom: 0vw; 
+            }
+    
+            & > *:nth-child(3n) {
+                margin-right: 5vw;  
+            }
         }
     }
 }

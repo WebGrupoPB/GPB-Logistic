@@ -58,7 +58,7 @@ header.navbar-space {
                 a { 
                     text-decoration: none;
                     color: #000;
-                    font-size: 1rem;
+                    font-size: 1vw;
                     font-style: normal;
                     font-weight: 400;
                     line-height: normal;
@@ -111,8 +111,12 @@ header.navbar-space {
                     display: grid;
                     place-items: center;
                     
-                    &:last-child { 
+                    &:last-child {
                         background-color: #980700;
+                    }
+
+                    img { 
+                        width: 5vh;
                     }
                 }            
             }
@@ -139,7 +143,7 @@ header.navbar-space {
 
                 h3 { 
                     color: #FFF;
-                    font-size: 1rem;
+                    font-size: 1vw;
                     font-style: normal;
                     font-weight: 400;
                     line-height: 82.523%;

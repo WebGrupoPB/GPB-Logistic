@@ -113,22 +113,22 @@ const Servicios = () => {
 
               <aside className='cifras-space'>
                   <div className='cifra-item'>
-                    <p>115 <span>unidades</span></p>
+                    <p><Counter numLimit={115}/> <span className='spanText'>unidades</span></p>
                     <h3>UNIDADES MOTORIZADAS</h3>
                   </div>
 
                   <div className='cifra-item'>
-                    <p>95 <span>unidades</span></p>
+                    <p><Counter numLimit={95}/> <span className='spanText'>unidades</span></p>
                     <h3>PIPAS DE 1,000/9,200 <span>galones</span></h3>
                   </div>
 
                   <div className='cifra-item'>
-                    <p>20, 40 y 45 <span>ft</span></p>
+                    <p><Counter numLimit={20}/>,<Counter numLimit={40}/> y <Counter numLimit={45}/> <span className='spanText'>ft</span></p>
                     <h3>PORTACONTENEDORES</h3>
                   </div>
 
                   <div className='cifra-item'>
-                    <p>48 y 53 <span>ft</span></p>
+                    <p><Counter numLimit={48}/> y <Counter numLimit={53}/> <span className='spanText'>ft</span></p>
                     <h3>FURGONES Y PLATAFORMAS</h3>
                   </div>
               </aside>
