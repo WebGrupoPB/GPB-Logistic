@@ -119,7 +119,7 @@ const Home = () => {
         </header>
 
         <main>
-            {shouldShowDecoradores && <Decoradores />}
+            <Decoradores />
 
             <section className='hero-space' id="hero-space">
                 <div className='hero-slider'>
