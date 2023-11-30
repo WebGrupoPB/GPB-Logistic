@@ -1017,7 +1017,7 @@ section.testimonios-section {
                 h1 { 
                     /* width: 50vw; */
                     color: #FFF;
-                    font-size: 4vw;
+                    font-size: 6vw;
                     font-style: normal;
                     font-weight: 700;
                     line-height: normal; 
@@ -1028,7 +1028,7 @@ section.testimonios-section {
 
                 div { 
                     background-color: #FFF;
-                    width: 55vw;
+                    width: 80vw;
                     height: .5vh;
                 }
             }
@@ -1055,11 +1055,11 @@ section.testimonios-section {
 
             h1 { 
                 color: #000;
-                font-size: 5vw;
+                font-size: 7vw;
                 font-style: normal;
                 font-weight: 700;
                 line-height: 85.3%; /* 42.65px */
-                letter-spacing: -3.75px;
+                letter-spacing: -1.5px;
 
                 margin-right: 5vw;
                 margin-top: 6vh;
@@ -1117,18 +1117,19 @@ section.testimonios-section {
                     place-items: center;
                     grid-template-columns: repeat(2, 1fr); // Dos columnas
                     grid-template-rows: repeat(2, 1fr);    // Dos filas
-                    gap: 20px;                             // Espacio entre los elementos
+                    gap: 0px;                             // Espacio entre los elementos
 
                     div.valor-item {
                         /* border: 1px solid #fff; */
                         /* background-color: red; */
-                        width: calc(60vw/2);
+                        width: calc(70vw/2);
                         height: calc(60vh/2);
 
                         display: grid;
+                        place-items: center;
 
                         img { 
-                            width: 12vw;
+                            width: 17vw;
                             height: auto;
                             margin: .5vh 0;
                             animation: pop 2.5s ease infinite;
@@ -1136,11 +1137,12 @@ section.testimonios-section {
                         }
 
                         h3 { 
-                            width: 50%;
+                            width: 80%;
                             margin: .5vh 0;
 
+                            text-align: center;
                             color: #FFF;
-                            font-size: 3vw;
+                            font-size: 4.5vw;
                             font-style: normal;
                             font-weight: 700;
                             line-height: 85.3%; /* 25.59px */
@@ -1148,9 +1150,11 @@ section.testimonios-section {
                         }
 
                         p { 
+                            text-align: center;
+                            width: 80%;
                             color: #FFF;
                             font-family: Helvetica;
-                            font-size: 2vw;
+                            font-size: 3vw;
                             font-style: normal;
                             font-weight: 400;
                             line-height: 16px; /* 12.795px */
@@ -1174,14 +1178,14 @@ section.testimonios-section {
     section.gallery-section { 
         /* background-color: green; */
         width: 100%;
-        min-height: 75vh;
+        min-height: 20vh;
 
         margin-top: 2.5vh;
         margin-bottom: 5vh;
         
 
         article.title {
-            /* background-color: red;  */
+            /* background-color: red; */ 
             width: 100%;
             height: 20vh;
 
@@ -1190,14 +1194,14 @@ section.testimonios-section {
             justify-content: center;
 
             h1 { 
-                width: 60vw;
+                width: 75vw;
                 text-align: center;
                 color: #101820;
-                font-size: 5vw;
+                font-size: 6vw;
                 font-style: normal;
                 font-weight: 700;
                 line-height: 85.3%; /* 42.65px */
-                letter-spacing: -3.75px;
+                letter-spacing: -1.5px;
                 margin: 1vh 0;
 
                 animation: zoomIn 2s ease-in-out;
@@ -1209,10 +1213,10 @@ section.testimonios-section {
         }
 
         aside.gallery-space {
-            background-color: blue;
+            /* background-color: blue; */
 
             width: 100%;
-            min-height: 100vh;
+            min-height: 20vh;
 
             display: grid;
             place-items: center;
@@ -1241,21 +1245,21 @@ section.testimonios-section {
         
 
         article.title {
-            /* background-color: red; */ 
+            /* background-color: red;  */
             width: 100%;
-            height: 15vh;
+            height: 10vh;
 
             display: flex;
-            align-items: center;
+            align-items: start;
             justify-content: end;
 
             h1 { 
                 color: #000;
-                font-size: 5vw;
+                font-size: 6vw;
                 font-style: normal;
                 font-weight: 700;
                 line-height: 85.3%; /* 42.65px */
-                letter-spacing: -3.75px;
+                letter-spacing: -1.5px;
 
                 margin-right: 4vw;
                 margin-bottom: 8vh;
@@ -1265,10 +1269,10 @@ section.testimonios-section {
         }
 
         div.valores-space {
-            /* background-color: red; */
+            /* background-color: green; */
 
             width: 100%;
-            height: 75vh;
+            height: 90vh;
 
             display: grid;
             place-items: center;
@@ -1276,11 +1280,11 @@ section.testimonios-section {
             aside.valores-marco {
                 /* background-color: blue; */
                 width: 95%;
-                height: 75vh;
+                height: 90vh;
 
                 display: flex;
                 align-items: center;
-                justify-content: end;
+                justify-content: center;
 
                 position: relative;
                 right: 0vw;
@@ -1288,8 +1292,8 @@ section.testimonios-section {
                 div.valores-info-space {
                     /* background-color: yellow; */
                     /* border: 1px solid #000; */
-                    width: 75vw;
-                    height: 75vh;
+                    width: 95vw;
+                    height: 90vh;
                     z-index: 1;
                     
                     display: flex;
@@ -1302,7 +1306,7 @@ section.testimonios-section {
 
                 img { 
                     width: auto;
-                    height: 50vh;
+                    height: 52vh;
                     
                 }
             }
@@ -1313,19 +1317,21 @@ section.testimonios-section {
     section.cifras-section { 
         /* background-color: green; */
         width: 100%;
-        height: 40vh;
+        height: 62vh;
         margin: 0; /* Ajusta el margen a 0 */
         margin-bottom: 5vh;
         padding: 0; /* Ajusta el relleno a 0 */
 
         /* margin-top: 2.5vh; */
-        display: grid;
-        place-items: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
 
         article.title {
             /* background-color: red; */ 
             width: 100%;
-            height: 8vh;
+            height: 12vh;
 
             display: flex;
             align-items: center;
@@ -1333,11 +1339,11 @@ section.testimonios-section {
 
             h1 { 
                 color: #000;
-                font-size: 5vw;
+                font-size: 6vw;
                 font-style: normal;
                 font-weight: 700;
                 line-height: 85.3%; /* 42.65px */
-                letter-spacing: -3.75px;
+                letter-spacing: -1.5px;
 
                 margin-left: 5vw;
                 margin-top: 6vh;
@@ -1348,32 +1354,32 @@ section.testimonios-section {
 
         aside.cifras-space {
             /* background-color: yellow; */
-            width: 80%;
-            height: 20vh;
+            width: 85%;
+            min-height: 50vh;
 
             display: flex;
-            align-items: center;
-            justify-content: center;
+            flex-wrap: wrap;
+            gap: 8vw;
 
             /* overflow: hidden; */
 
             div.cifra-item {
                 /* background-color: yellow; */
-                width: calc(100%/4);
-                height: 100%;
+                width: calc(80%/2);
+                height: 20vh;
                 /* border: 1px solid #fff; */
 
                 display: grid;
                 place-items: center;
 
                 img { 
-                    width: 9vw;
+                    width: 18vw;
                     height: auto;
                 }
 
                 h4 { 
                     color: #000;
-                    font-size: 2.75vw;
+                    font-size: 5vw;
                     font-style: normal;
                     font-weight: 600;
                     line-height: 85.3%; /* 34.12px */
@@ -1385,7 +1391,7 @@ section.testimonios-section {
                 div.counter { 
                     color: #6B6B6B;
                     text-align: center;
-                    font-size: 3vw;
+                    font-size: 5vw;
                     font-style: normal;
                     font-weight: 500;
                     line-height: 85.3%; /* 34.12px */
@@ -1396,7 +1402,7 @@ section.testimonios-section {
 
                 span.span-cifra { 
                     color: #6B6B6B;
-                    font-size: 2vw;
+                    font-size: 3vw;
                     font-style: normal;
                     font-weight: 300;
                     line-height: 85.3%;
@@ -1409,7 +1415,7 @@ section.testimonios-section {
     section.testimonios-section { 
         /* background-color: green; */
         width: 100%;
-        height: 50vh;
+        height: 60vh;
         margin-bottom: 10vh; /* Ajusta el margen a 0 */
         padding: 0; /* Ajusta el relleno a 0 */
 
@@ -1418,22 +1424,23 @@ section.testimonios-section {
         article.title {
             /* background-color: red; */ 
             width: 100%;
-            height: 7.5vh;
+            height: 10vh;
 
             display: flex;
-            align-items: center;
+            align-items: end;
             justify-content: center;
 
             h1 { 
                 color: #000;
-                font-size: 5vw;
+                font-size: 6vw;
                 font-style: normal;
                 font-weight: 700;
                 line-height: 85.3%; /* 42.65px */
-                letter-spacing: -3.75px;
+                letter-spacing: -1.5px;
 
                 margin-left: 0vw;
                 margin-top: 6vh;
+                position: relative;
 
                 animation: zoomIn 2s ease-in-out;
             }
@@ -1442,7 +1449,7 @@ section.testimonios-section {
         aside.testimonios-space {
             /* background-color: #101820; */
             width: 100%;
-            height: 42vh;
+            height: 50vh;
 
             display: grid;
             place-items: center;

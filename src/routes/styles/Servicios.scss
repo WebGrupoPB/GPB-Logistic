@@ -757,3 +757,357 @@ section.testimonios-section-servicios {
         }       
     }
 }
+
+/*************** Pantallas Movil con orientacion vertical  *******************/
+@media (max-width: 749px) and (orientation: portrait) {
+    section.hero-space-2 { 
+        /* background-color: blue; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 40vh;
+    
+        margin-top: 0vh;
+        margin-bottom: 0vh;
+    
+        div.hero-banner-servicios {
+            background-image: url("https://s3.amazonaws.com/gpblogistic.com/Recursos-GPB-Logistic/Servicios/servicios-banner.png");
+            background-size: 100% 100%;
+            width: 92%;
+            height: 30vh;
+    
+            display: grid;
+            place-items: center;
+    
+            h1 { 
+                color: #FFF;
+                font-size: 12vw;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal; 
+            }
+        }
+    }
+    
+    
+    section.Servicios-section { 
+        /* background-color: green; */
+        width: 100%;
+        min-height: 55vh;
+        display: grid;
+        place-items: center;
+        margin-bottom: 10vh;
+    
+        article.title {
+            /* background-color: red; */
+            width: 100%;
+            height: 9vh;
+            display: flex; 
+            align-items: center;
+            justify-content: start;
+    
+            h1 {
+                margin-left: 4vw;
+                text-transform: uppercase;
+                color: #000;
+                font-size: 5vw;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 85.3%; /* 42.65px */
+    
+                animation: slideInLeft 2s ease-in-out;
+            }
+        }
+    
+        aside.serviciosContent-space { 
+            /* background-color: blue; */
+            width: 80%;
+            min-height: 46vh;
+    
+            display: grid;
+            place-items: center;
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            gap: 10vw;
+    
+            div.servicioContent-card {
+                border-radius: 5vb;
+                background-color: #FFF;
+                box-shadow: 3px 8px 40.6px -3px rgba(0, 0, 0, 0.25);
+                width: 70vw;
+                height: 46vh;
+    
+                display: grid;
+                place-items: center;
+    
+                header.servicio-title {
+                    /* background-color: blue; */
+                    width: 100%;
+                    height: 27.6vh;
+                    border-radius: 5vb 5vb 0px 0;
+                    border-bottom: 1px solid #CECECE;
+    
+                    position: relative;
+                    display: grid;
+                    place-items: center;
+    
+                    h3 { 
+                        position: absolute;
+                        top: 0vh;
+                        left: 3vw;
+    
+                        text-transform: uppercase;
+                        color: #000;
+                        font-family: 'Kommon Grotesk', sans-serif;
+                        font-size: 5vw;
+                        font-style: normal;
+                        font-weight: 900;
+                        line-height: 84.7%; /* 46.585px */      
+                    }
+    
+                    img { 
+                        width: 40vw;
+                        height: auto;
+                        cursor: pointer;
+                        transition: 1s;
+    
+                        &:hover { 
+                            transform: scale(1.2);
+                        }
+                    }
+                }
+    
+                article.servicio-text {
+                    /* background-color: yellow; */
+                    width: 100%;
+                    height: 18.4vh;
+                    border-radius: 0 0 5vb 5vb;
+    
+                    display: grid;
+                    place-items: center;
+    
+                    p {
+                        width: 80%;
+                        color: #000;
+                        font-family: 'Kommon Grotesk', sans-serif;
+                        font-size: 3vw;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 90%; /* 33.88px */
+                    }
+                }
+            }
+        }
+    }
+    
+    section.sliderServicios-section {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 30vh;
+        overflow: hidden;
+        
+        margin-top: 0vh;
+        margin-bottom: 0vh;
+    
+        position: relative;
+    
+        div.hero-slider{
+            width: 90%;
+            height: 30vh;
+    
+            position: relative;
+    
+            aside.hero-title {
+                position: absolute;
+                top: 3vh;
+                left: 0;
+    
+                animation: slideInLeft 2s ease-in-out;
+    
+                z-index: 1;
+    
+                h1 { 
+                    /* width: 50vw; */
+                    color: #FFF;
+                    font-size: 3vw;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal; 
+                    
+                    margin: .5vh 0;
+                    margin-left: 1vw;
+                }
+    
+                div { 
+                    background-color: #FFF;
+                    width: 52vw;
+                    height: .5vh;
+                }
+            }
+          }
+      }
+    
+    
+      section.cifrasServicios-section { 
+       /* background-color: green; */
+        width: 100%;
+        height: 90vh;
+        margin: 0; /* Ajusta el margen a 0 */
+        margin-bottom: 5vh;
+        padding: 0; /* Ajusta el relleno a 0 */
+    
+        /* margin-top: 2.5vh; */
+        display: grid;
+        place-items: center;
+    
+        article.title {
+            /* background-color: red; */ 
+            width: 100%;
+            height: 10vh;
+    
+            display: flex;
+            align-items: center;
+            justify-content: start;
+    
+            h1 { 
+                color: #000;
+                font-size: 5vw;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 85.3%; /* 42.65px */
+                letter-spacing: -1.5px;
+    
+                margin-left: 5vw;
+                margin-top: 6vh;
+    
+                animation: slideInLeft 2s ease-in-out;
+            }
+        }
+    
+        aside.cifras-space {
+            /* background-color: yellow; */
+            max-width: 90%;
+            height: 70vh;
+    
+            display: grid;
+
+            
+            gap: 2vw;
+    
+            /* overflow: hidden; */
+    
+            div.cifra-item {
+                background: #FFF;
+                box-shadow: 0px 4px 24.3px 4px rgba(0, 0, 0, 0.25);
+                width: 85vw;
+                height: 15vh;
+                /* border: 1px solid #fff; */
+                border-left: 3vw solid #DC3028;
+    
+                display: grid;
+                place-items: center;
+                
+    
+                p { 
+                    color: #6B6B6B;
+                    text-align: center;
+                    font-family: 'Kommon Grotesk', sans-serif;
+                    font-size: 4vw;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 85.3%; /* 38.385px */
+                    letter-spacing: 0px;
+    
+                    margin: 2vh 0 .5vh 0;
+                    display: flex;
+    
+                    div.counter { 
+                        text-align: center;
+                        font-size: 5vw;
+                        margin-right: .5vw;
+                        margin-left: .5vw;
+                    }
+    
+                    span.spanText {
+                        margin-left: .5vw;
+                        font-size: 3vw;
+                    }
+                }
+    
+                h3 { 
+                    width: 90%;
+    
+                    color: #000;
+                    text-align: center;
+                    font-family: 'Kommon Grotesk', sans-serif;
+                    font-size: 4vw;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 85.3%; /* 34.12px */
+                    letter-spacing: 0px;
+    
+                    margin: 0.5vh 0vw 2vh 0;
+    
+                    span { 
+                        font-size: 3vw;
+                    }
+                }
+            }
+        }       
+    }
+    
+    
+    section.testimonios-section-servicios { 
+        /* background-color: green; */
+        width: 100%;
+        height: 40vh;
+        margin: 0; /* Ajusta el margen a 0 */
+        padding: 0; /* Ajusta el relleno a 0 */
+        margin-bottom: 5vh;
+    
+        /* margin-top: 2.5vh; */
+    
+        article.title {
+            /* background-color: red;  */
+            width: 100%;
+            height: 0vh;
+    
+            display: flex;
+            align-items: center;
+            justify-content: center;
+    
+            h1 { 
+                width: 50vw;
+                text-align: center;
+                color: #101820;
+                font-size: 2.5rem;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 85.3%; /* 42.65px */
+                letter-spacing: -3.75px;
+                margin: 1vh 0;
+    
+                animation: zoomIn 2s ease-in-out;
+    
+                span { 
+                   color: #DA291C;
+                }
+            }
+        }
+    
+        aside.testimonios-space {
+            /* background-color: #101820; */
+            width: 100%;
+            height: 40vh;
+    
+            display: grid;
+            place-items: center;
+    
+            /* overflow: hidden; */
+    
+        }       
+    }
+}

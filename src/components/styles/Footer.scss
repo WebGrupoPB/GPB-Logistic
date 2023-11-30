@@ -414,3 +414,217 @@ footer.footer-space {
 }
 
 }
+
+/*************** Pantallas Movil con orientacion vertical  *******************/
+@media (max-width: 749px) and (orientation: portrait) { 
+    
+    footer.footer-space { 
+        background-color: #101820;
+        width: 100%;
+        min-height: 100vh;
+    
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    
+        header.footer-logo {
+            /* background-color: red; */
+            width: 90vw;
+            height: 30vh;
+    
+            display: grid;
+            place-items: center;
+    
+            div.footer-logo-space {
+                /* background-color: yellow;  */
+                width: 90vw;
+                height: 30vh;
+                margin-left: 0vw;
+    
+                display: flex;
+                align-items: center;
+                justify-content: center;
+    
+                gap: 15vw;
+    
+                img.footer-logo-img { 
+                    width: auto;
+                    height: 25vh;
+                }
+    
+                div.footer-nosotros-text { 
+                    /* background-color: green; */
+                    width: 40vw;
+                    height: 30vh;
+
+                    display: grid;
+                    place-items: center;
+    
+                    h6 { 
+                        color: #FFF;
+                        font-family: 'Montserrat', sans-serif;
+                        font-size: 4vw;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: normal;
+                        margin: .5vh 0;
+                    }
+                     
+                    p {
+                        width: 100%;
+                        color: #FFF;
+                        font-family: 'Montserrat', sans-serif;
+                        font-size: 3vw;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 105.4%; /* 15.81px */
+                        letter-spacing: 0.825px;
+                    }
+                }
+            }
+        }
+    
+        article.footer-info {
+            /* background-color: blue; */
+            width: 32vw;
+            height: 30vh;
+    
+            position: relative;
+            display: flex;
+            align-items: start;
+            justify-content: end;
+            gap: 4vw;
+    
+            div.footer-info-contactos {
+                /* background-color: blue; */
+                width: 12vw;
+                height: 25vh;
+    
+                h6 { 
+                    color: #FFF;
+                    font-family: 'Montserrat', sans-serif;
+                    font-size: 2vw;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: normal;
+    
+                    margin-bottom: 1vh;
+                }
+    
+                span { 
+                    margin-top: 1vw;
+                    display: flex;
+                    gap: 1vw;
+    
+                    img {
+                        width: 2vw;
+                        height: auto;
+                    }
+    
+                    p {
+                        color: #FFF;
+                        font-family: 'Montserrat', sans-serif;
+                        font-size: 1.2vw;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+                    }
+                }
+            }
+    
+            div.footer-info-ubicaciones {
+                /* background-color: red; */
+                width: 12vw;
+                height: 25vh;
+    
+                h6 { 
+                    color: #FFF;
+                    font-family: 'Montserrat', sans-serif;
+                    font-size: 2vw;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: normal;
+    
+                    margin-bottom: 1vh;
+                }
+    
+                span { 
+                    display: flex;
+                    gap: 1vw;
+    
+                    img {
+                        width: 3vw;
+                        height: auto;
+                    }
+    
+                    p {
+                        color: #FFF;
+                        font-family: 'Montserrat', sans-serif;
+                        font-size: 1.2vw;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+                    }
+                }
+            }
+    
+            p.footer-info-copyright {
+                width: 100%;
+                position: absolute;
+                bottom: 0;
+                left: 2vw;
+    
+                text-align: center;
+                color: #FFF;
+                /* font-family: 'Montserrat', sans-serif; */
+                font-size: 1.5vw;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+            }
+        }
+    
+        aside.footer-map {
+            /* background-color: yellow; */
+            width: 35vw;
+            height: 30vh;
+    
+            display: flex;
+            align-items: start;
+            justify-content: center;
+    
+            div.menu-space {
+                /* background-color: red; */
+                width: 15vw;
+                height: 25vh;
+                margin-top: 2.5vh;
+    
+                h4 { 
+                    color: #FFF;
+                    font-family: 'Montserrat', sans-serif;
+                    font-size: 2vw;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: normal;
+                }
+    
+                li.menu-item { 
+                    list-style: none; // Quitar las viñetas
+                    color: #fff;
+    
+                    a { 
+                        text-decoration: none;
+                        color: #FFF;
+                        font-family: 'Montserrat', sans-serif;
+                        font-size: 1.7vw;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+                    }
+                }
+            }
+        }
+    }
+    
+    }

@@ -250,3 +250,129 @@ aside.textDecoration-space {
   }
 
 }
+
+/*************** Pantallas Movil con orientacion vertical  *******************/
+@media (max-width: 749px) and (orientation: portrait) {
+  aside.textDecoration-space {
+    /* background-color: green; */
+    width: 6vw;
+    height: 25vh;
+
+    position: fixed;
+    bottom: 10vh;
+    left: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: start;
+
+    z-index: 600;
+
+    div.line-decoration { 
+        background-color: #DA291C;
+        width: 2vw;
+        height: 25vh;
+    }
+
+    div.text-decoration { 
+        background-color: #101820;
+        width: 4vw;
+        height: 25vh;
+
+        display: flex;
+        align-items: start;
+        justify-content: center;
+        
+
+        h6 {
+            width: 100%;
+            transform: rotate(90deg); 
+            text-transform: uppercase;
+            color: #FFF;
+            font-size: 3vw;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+
+            /* transform-origin: center center; */
+            white-space: nowrap;
+            
+            position: relative;
+            bottom: 2vh;
+        }
+    }
+}
+
+
+.social-media { 
+    /* background-color: blue; */
+    width: 13vw;
+    height: 13vw;
+    position: fixed;
+    bottom: 10vh;
+    right: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 500;
+    
+    .circle-icon {
+        background-color: #DA291C;
+        width: 13vw;
+        height: 13vw;
+        border-radius: 2vw 0 0 2vw;
+
+
+        display: grid;
+        place-items: center;
+    
+        img {
+            width: 8vw;
+            height: 8vw;
+        }
+    }
+      
+      
+    .bubbleChat {
+      position: absolute;
+      bottom: 15%;
+      right: 100%;  
+      width: 15vw;
+      height: 5vw;
+      /* border: 1px solid red; */
+      display: flex;
+        
+      .squareBubble {
+        background-color: #fff;
+        width: 15vw;
+        height: 5vw;
+        border: 0.1vb solid #000;
+        border-radius: 0.5vw;
+        line-height: 1px;
+        text-align: left;
+  
+        h4 {
+          margin-left: 0.75vw;
+          font-size: 1.2vw;
+        }
+          
+        p {
+          margin-left: 0.75vw;
+          font-size: 1vw;
+        }
+      }
+          
+      .trianguleBubble {
+      
+      position: relative;
+      top: 55%;
+      width: 0;
+      height: 0;
+      border-top: 0.625vw solid transparent; /* Lado izquierdo transparente */
+      border-bottom: 0.625vw solid transparent; /* Lado derecho transparente */
+      border-left: 1.25vw solid #000; /* Lado inferior sólido (el color define el color del triángulo) */
+      }  
+    }   
+  }
+}
