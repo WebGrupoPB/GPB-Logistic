@@ -22,8 +22,12 @@ const Footer = () => {
                 <div className='footer-nosotros-text'>
                     <h6>Nosotros</h6>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipiscing elit posuere, aliquam rutrum eros curabitur 
-                        taciti risus commodo, molestie turpis consequat ante aptent primis nam.
+                        <strong>¡Descubra la Diferencia en Logística Con Nosotros!</strong>
+                    </p>
+
+                    <p>
+                        Listos para simplificar su cadena de suministro y llevar su logística al siguiente nivel. 
+                        Permítanos ser su socio estratégico.
                     </p>
                 </div>
             </div>
@@ -39,7 +43,7 @@ const Footer = () => {
                 </span>
                 <span>
                     <img src="https://s3.amazonaws.com/gpblogistic.com/Recursos-GPB-Logistic/General/Footer/phone_icon_Footer.svg" alt="phone-icon" />
-                    <p>PBX: 0000-0000</p>
+                    <p>TEL: 5410-8747</p>
                 </span>
             </div>
 

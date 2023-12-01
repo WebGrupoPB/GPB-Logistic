@@ -135,7 +135,7 @@ const Servicios = () => {
             </section> 
 
 
-            <section className='testimonios-section-servicios'>
+            {/* <section className='testimonios-section-servicios'>
                  <article className='title'>
                     <h1>
                     </h1>
@@ -146,7 +146,7 @@ const Servicios = () => {
                   <CarruselSwipper /> 
 
                 </aside>
-            </section>
+            </section> */}
 
         </main>
 

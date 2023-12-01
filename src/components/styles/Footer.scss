@@ -41,7 +41,7 @@ footer.footer-space {
                 h6 { 
                     color: #FFF;
                     font-family: 'Montserrat', sans-serif;
-                    font-size: 1rem;
+                    font-size: 1.25vw;
                     font-style: normal;
                     font-weight: 600;
                     line-height: normal;
@@ -52,7 +52,7 @@ footer.footer-space {
                     width: 90%;
                     color: #FFF;
                     font-family: 'Montserrat', sans-serif;
-                    font-size: .9rem;
+                    font-size: 1vw;
                     font-style: normal;
                     font-weight: 400;
                     line-height: 105.4%; /* 15.81px */
@@ -81,7 +81,7 @@ footer.footer-space {
             h6 { 
                 color: #FFF;
                 font-family: 'Montserrat', sans-serif;
-                font-size: 15px;
+                font-size: 1.25vw;
                 font-style: normal;
                 font-weight: 600;
                 line-height: normal;
@@ -101,7 +101,7 @@ footer.footer-space {
                 p {
                     color: #FFF;
                     font-family: 'Montserrat', sans-serif;
-                    font-size: 10px;
+                    font-size: 0.75vw;
                     font-style: normal;
                     font-weight: 400;
                     line-height: normal;
@@ -117,7 +117,7 @@ footer.footer-space {
             h6 { 
                 color: #FFF;
                 font-family: 'Montserrat', sans-serif;
-                font-size: 15px;
+                font-size: 1.25vw;
                 font-style: normal;
                 font-weight: 600;
                 line-height: normal;
@@ -172,14 +172,14 @@ footer.footer-space {
 
         div.menu-space {
             /* background-color: red; */
-            width: 15vw;
+            width: 16vw;
             height: 25vh;
             margin-top: 2.5vh;
 
             h4 { 
                 color: #FFF;
                 font-family: 'Montserrat', sans-serif;
-                font-size: 1rem;
+                font-size: 1.25vw;
                 font-style: normal;
                 font-weight: 600;
                 line-height: normal;
@@ -235,7 +235,7 @@ footer.footer-space {
             align-items: center;
             justify-content: center;
 
-            gap: 5vw;
+            gap: 0vw;
 
             img.footer-logo-img { 
                 width: auto;
@@ -384,7 +384,7 @@ footer.footer-space {
             /* background-color: red; */
             width: 15vw;
             height: 25vh;
-            margin-top: 2.5vh;
+            margin-top: 1.5vh;
 
             h4 { 
                 color: #FFF;
@@ -487,28 +487,28 @@ footer.footer-space {
     
         article.footer-info {
             /* background-color: blue; */
-            width: 32vw;
+            width: 90vw;
             height: 30vh;
     
             position: relative;
             display: flex;
-            align-items: start;
-            justify-content: end;
+            align-items: center;
+            justify-content: center;
             gap: 4vw;
     
             div.footer-info-contactos {
-                /* background-color: blue; */
-                width: 12vw;
+                /* background-color: green; */
+                width: 35vw;
                 height: 25vh;
     
                 h6 { 
                     color: #FFF;
                     font-family: 'Montserrat', sans-serif;
-                    font-size: 2vw;
+                    font-size: 4vw;
                     font-style: normal;
                     font-weight: 600;
                     line-height: normal;
-    
+                    margin-top: 1vh;
                     margin-bottom: 1vh;
                 }
     
@@ -518,14 +518,14 @@ footer.footer-space {
                     gap: 1vw;
     
                     img {
-                        width: 2vw;
+                        width: 5vw;
                         height: auto;
                     }
     
                     p {
                         color: #FFF;
                         font-family: 'Montserrat', sans-serif;
-                        font-size: 1.2vw;
+                        font-size: 2vw;
                         font-style: normal;
                         font-weight: 400;
                         line-height: normal;
@@ -535,17 +535,18 @@ footer.footer-space {
     
             div.footer-info-ubicaciones {
                 /* background-color: red; */
-                width: 12vw;
+                width: 35vw;
                 height: 25vh;
     
                 h6 { 
                     color: #FFF;
                     font-family: 'Montserrat', sans-serif;
-                    font-size: 2vw;
+                    font-size: 4vw;
                     font-style: normal;
                     font-weight: 600;
                     line-height: normal;
     
+                    margin-top: 1vh;
                     margin-bottom: 1vh;
                 }
     
@@ -554,14 +555,14 @@ footer.footer-space {
                     gap: 1vw;
     
                     img {
-                        width: 3vw;
+                        width: 5vw;
                         height: auto;
                     }
     
                     p {
                         color: #FFF;
                         font-family: 'Montserrat', sans-serif;
-                        font-size: 1.2vw;
+                        font-size: 2vw;
                         font-style: normal;
                         font-weight: 400;
                         line-height: normal;
@@ -572,13 +573,13 @@ footer.footer-space {
             p.footer-info-copyright {
                 width: 100%;
                 position: absolute;
-                bottom: 0;
-                left: 2vw;
+                bottom: -32vh;
+                left: 0vw;
     
                 text-align: center;
                 color: #FFF;
                 /* font-family: 'Montserrat', sans-serif; */
-                font-size: 1.5vw;
+                font-size: 2.5vw;
                 font-style: normal;
                 font-weight: 400;
                 line-height: normal;
@@ -587,7 +588,7 @@ footer.footer-space {
     
         aside.footer-map {
             /* background-color: yellow; */
-            width: 35vw;
+            width: 90vw;
             height: 30vh;
     
             display: flex;
@@ -596,14 +597,19 @@ footer.footer-space {
     
             div.menu-space {
                 /* background-color: red; */
-                width: 15vw;
+                width: 90vw;
                 height: 25vh;
-                margin-top: 2.5vh;
+                margin-top: 0vh;
+                position: relative;
+                bottom: 15vh;
+
+                display: grid;
+                place-items: center;
     
                 h4 { 
                     color: #FFF;
                     font-family: 'Montserrat', sans-serif;
-                    font-size: 2vw;
+                    font-size: 6vw;
                     font-style: normal;
                     font-weight: 600;
                     line-height: normal;
@@ -617,7 +623,7 @@ footer.footer-space {
                         text-decoration: none;
                         color: #FFF;
                         font-family: 'Montserrat', sans-serif;
-                        font-size: 1.7vw;
+                        font-size: 4vw;
                         font-style: normal;
                         font-weight: 400;
                         line-height: normal;

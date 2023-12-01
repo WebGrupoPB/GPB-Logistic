@@ -70,8 +70,7 @@ const Navbar = () => {
 
             <aside className='navlinks-space'>
                 <div className='navLinks'>
-                    <NavLink to={'/'} activeClassName="active" onClick={scrollToTop}
-                    > 
+                    <NavLink to={'/'} activeClassName="active" onClick={scrollToTop}> 
                         Inicio
                     </NavLink>
 
@@ -108,7 +107,63 @@ const Navbar = () => {
         </nav>
 
         <nav className='navbar-movil'>
+          <aside className='navlogo-space'>
+              <Link to={"/#"} onClick={scrollToTop}>
+                  <img src="https://s3.amazonaws.com/gpblogistic.com/Recursos-GPB-Logistic/General/Navbar/gpbL-logo-navbar.svg" alt="navlogo" />
+              </Link>
+          </aside>
 
+          <aside className='navMenu-space'>
+            <div className='global-icon'>
+              <Link>
+                <img src="https://s3.amazonaws.com/gpblogistic.com/Recursos-GPB-Logistic/General/Navbar/global-navbar.svg" alt="globalIcon" />
+              </Link>
+            </div>
+
+            <div className='burger-menu' onClick={toggleMenu}>
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+          </aside>
+
+
+          <aside className={`menuMovil-space ${menuOpen ? 'active' : 'disactive'}`}>
+              <div className='navLinks'>
+                <NavLink to={'/'} activeClassName="active" onClick={scrollToTop}> 
+                  <span>
+                    Inicio
+                  </span>               
+                </NavLink>
+
+                <NavLink to={'/servicios'} activeClassName="active" onClick={scrollToTop}> 
+                  <span>
+                    Servicios
+                  </span> 
+                </NavLink>
+
+                <NavLink to={'/cobertura'} activeClassName="active" onClick={scrollToTop}> 
+                  <span>
+                    Cobertura
+                  </span>               
+                </NavLink>
+
+                <NavLink to={'/clientes'} activeClassName="active" onClick={scrollToTop}> 
+                  <span>
+                    Clientes
+                  </span> 
+                </NavLink>
+              </div>
+
+
+              <div className='navservices-space'>
+                  <Link to={"/#"}>
+                      <h3>Cotiza <span>HOY</span></h3>
+                      <img src="https://s3.amazonaws.com/gpblogistic.com/Recursos-GPB-Logistic/General/Navbar/cotizaBtn-navbar.svg" alt="cotizaBtn" />
+                  </Link>
+              </div>
+            </aside>
+          
         </nav>
     </header >
   );

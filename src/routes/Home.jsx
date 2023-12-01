@@ -242,7 +242,7 @@ const Home = () => {
               </aside>
             </section>
 
-            <section className='testimonios-section'>
+            {/* <section className='testimonios-section'>
               <article className='title'>
                   <h1>TESTIMONIOS</h1>
               </article>
@@ -250,7 +250,7 @@ const Home = () => {
               <aside className='testimonios-space'>
                 <CarruselSwipper /> 
               </aside>
-            </section>
+            </section> */}
 
             
 

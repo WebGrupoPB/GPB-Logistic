@@ -97,7 +97,7 @@ const Cobertura = () => {
                 </aside>
             </section>
 
-            <section className='testimonios-section-cobertura'>
+            {/* <section className='testimonios-section-cobertura'>
                  <article className='title'>
                     <h1>
                         A <span>una</span> llamada y a <span>un</span> contacto para <span>solucionar</span> su logística
@@ -109,7 +109,7 @@ const Cobertura = () => {
                   <CarruselSwipper /> 
 
                 </aside>
-            </section>
+            </section> */}
 
         </main>
 
