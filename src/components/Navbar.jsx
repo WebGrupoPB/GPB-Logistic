@@ -99,7 +99,7 @@ const Navbar = () => {
             </aside>
 
             <aside className='navservices-space'>
-                <Link to={"/#"}>
+                <Link to={"https://wa.me/50254108747" } target="_blank">
                     <h3>Cotiza <span>HOY</span></h3>
                     <img src="https://s3.amazonaws.com/gpblogistic.com/Recursos-GPB-Logistic/General/Navbar/cotizaBtn-navbar.svg" alt="cotizaBtn" />
                 </Link>
@@ -157,7 +157,7 @@ const Navbar = () => {
 
 
               <div className='navservices-space'>
-                  <Link to={"/#"}>
+                  <Link to={"https://wa.me/50254108747" } target="_blank">
                       <h3>Cotiza <span>HOY</span></h3>
                       <img src="https://s3.amazonaws.com/gpblogistic.com/Recursos-GPB-Logistic/General/Navbar/cotizaBtn-navbar.svg" alt="cotizaBtn" />
                   </Link>

@@ -59,7 +59,7 @@ const Decoradores = () => {
         <div className='social-media'>
           {/* <a href="https://www.instagram.com/tangostore.la/?igshid=MzRlODBiNWFlZA%3D%3D" target="_blank"><div className='circle-icon'><img src="https://s3.amazonaws.com/globaltech.la/Recursos+GlobalTech/General/facebookDecorador.png" alt="instagram"/></div></a> */}
           {/* <a href="https://www.facebook.com/globaltechla" target="_blank"><div className='circle-icon'><img src="https://s3.amazonaws.com/globaltech.la/Recursos+GlobalTech/General/facebookDecorador.png" alt="facebook"/></div></a> */}
-          <Link href="https://api.whatsapp.com/send?phone=50259464923&text=%C2%A1Hola!,%20vengo%20del%20sitio%20web%20y%20tengo%20algunas%20dudas%20y%20unas%20sugerencias." target="_blank">
+          <Link to={"https://wa.me/50254108747" } target="_blank">
             <div
               className={`circle-icon${isHovered ? ' hovered' : ''}`}
               onMouseEnter={handleHover}
