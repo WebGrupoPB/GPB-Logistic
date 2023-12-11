@@ -206,7 +206,7 @@ const Home = () => {
                 </div>
             </section>
 
-            <section className='cifras-section'>
+{/*             <section className='cifras-section'>
               <article className='title'>
                 <h1>GPB LOGISTIC EN CIFRAS</h1>
               </article>
@@ -240,7 +240,7 @@ const Home = () => {
                     <span className='span-cifra'>paquetes</span>
                   </div>
               </aside>
-            </section>
+            </section> */}
 
             {/* <section className='testimonios-section'>
               <article className='title'>
